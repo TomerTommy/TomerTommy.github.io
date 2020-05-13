@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 @font-face
 {
-    font-family: cascadia;
-    src: url("fonts/cascadia.ttf");
+    font-family: CalibreMedium;
+    src: url("fonts/CalibreMedium.otf");
+    font-family: seagul;
+    src: url("fonts/seag.ttf");
+    font-family: FabyenDemo;
+    src: url("fonts/FabyenDemo.ttf");
 }
 
 body
@@ -11,8 +15,8 @@ body
     /* background-color: #1d2e1f;
     background-image: repeating-linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2),#1c2619  102% ); 
      */
-    background-color: #e100ff;
-    background-image: repeating-radial-gradient(farthest-corner at 30% 30%, red 0,green, red 20%); /* repeating-linear-gradient(to right, red 0%,blue 20%, green 40%, orange 60%, blue 80%, green 85%, black 100%);*/
+    background-color: #2b3c5a;
+    background-image: repeating-linear-gradient(to center, black 100%); /* repeating-linear-gradient(to right, red 0%,blue 20%, green 40%, orange 60%, blue 80%, green 85%, black 100%);*/
     height: 200vh;
     display: block; /* */
     /*margin: 0px;*/ /* rhs margin on the page */
@@ -26,7 +30,7 @@ body
 #title
 {
     color: rgba(255, 255, 255, 255);
-    font-family: 'VT323', 'monospace'; /* font family */
+    font-family: 'CalibreMedium'; /* font family */
     font-size: 60pt; /* size of the font */
     margin: -25px auto; /* vertical margin from top, horizontal centering (using auto) */
     width: max-content; /* Takes up full width of screen */
@@ -39,7 +43,7 @@ h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 #title_description
 {
     color: rgba(255, 255, 255, 255);
-    font-family: 'cascadia', 'monospace'; /*'Source Code Pro', monospace;  /* font family */
+    font-family: 'CalibreMedium'; /*'Source Code Pro', monospace;  /* font family */
     /*font-size: 30pt; /* size of the font */
     margin-top: 25px auto; /* vertical margin from top, horizontal centering (using auto) */
    /* width: max-content; /* Takes up full width of screen */
@@ -55,7 +59,7 @@ h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 #about_me
 {
     color: rgba(255, 255, 255, 255);
-    font-family: 'cascadia', 'monospace';
+    font-family: 'CalibreMedium';
     font-size: 1.8rem; 
     letter-spacing: -.05rem;
 }
@@ -100,7 +104,7 @@ ul li a
     --fill-color_outer: #ffffff;
     width: max-content; /* Takes up full width of screen */    
     display: block;
-    font-family: "cascadia", "monospace";
+    font-family: "CalibreMedium";
     font-size: 3rem;
     font-weight: 100;
     text-decoration: none;
@@ -135,7 +139,7 @@ ul li a:hover
 /* Tooltip for quick links. */
 #tooltip 
 {
-    font-family: 'VT323', monospace;
+    font-family: 'CalibreMedium';
     font-size: 15pt;
     color: rgb(255, 255, 255);
     padding: 5px;
@@ -194,7 +198,7 @@ letter.initial
 
 
 .buttons {
-  font-family: "cascadia", "monospace";
+  font-family: "CalibreMedium";
 
     display: -webkit-box;
     display: flex;
@@ -325,7 +329,7 @@ letter.initial
 #pt
 {
   color: rgba(255, 255, 255, 255);
-  font-family: 'cascadia', 'monospace';
+  font-family: 'CalibreMedium';
   font-size: 1.8rem; 
   letter-spacing: -.05rem;
   text-align: center;
@@ -403,7 +407,7 @@ letter.initial
 {
   color: rgba(255, 255, 255, 255);
   text-align: center; 
-  font-family: 'VT323', monospace;
+  font-family: 'CalibreMedium';
   font-size: 3.5rem; 
   letter-spacing: -.05rem;
 }
@@ -424,7 +428,7 @@ letter.initial
   padding: 10px;
   text-align: left;
   box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.6);
-  font-family: 'cascadia', 'monospace';
+  font-family: 'CalibreMedium';
 
 }
 .chart .metric .metric-value {
