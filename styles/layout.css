@@ -9,16 +9,24 @@
     font-family: FabyenDemo;
     src: url("fonts/FabyenDemo.ttf");
 }
+@font-face
+{
+    font-family: CalibreSemibold;
+    src: url("fonts/CalibreSemibold.otf")
+}
+
+/*  
+    ------------------------------------
+                    MAIN
+    ------------------------------------  
+*/
 
 body
 {
-    background-color: #1d2e1f;
-    background-image: repeating-linear-gradient(rgba(16, 16, 71, 0.432), rgba(0, 0, 255, 0.2),#1c2619  102% ); 
-    height: 100vh;
+    background-color: #010033;
+    min-height: 100vh;
     display: block;
-    font-size: 15pt;
-    text-shadow: 0 0 3px;
-    margin: 1% 20%;
+    margin: 0;
 
     /* DEBUG VARIABLES */
     /* border: 4px solid rgb(255, 255, 0); */
@@ -30,86 +38,202 @@ p
     font-size: large;
     font-family: 'CalibreMedium';
     text-align: center;
-    
 }
-/* DEBUG VALUES 
-#block
+
+#btn
 {
-    display: block;    
-    border: solid greenyellow;
+    padding: 1em 2em;
+    color: whitesmoke;
+    text-align: center;
+    font-size: larger;
+    border: 3px solid rgb(28, 123, 187);
+    border-radius: 5%;
+    margin-top: 10%;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: 'CalibreSemibold';
 }
+
+#btn:hover
+{
+    background-color: rgba(0, 153, 255, 0.144);
+    color: rgb(206, 162, 41);
+}
+
+/*  
+    ------------------------------------
+                    NAV
+    ------------------------------------  
 */
 
-.title_name
+ul 
 {
-    color: whitesmoke;
-    font-family: 'CalibreMedium'; /* font family */
-    font-size: 60pt; /* size of the font */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100vw;
+    font-family: 'CalibreSemibold';
+    box-shadow: 5px 0 10px;
+    background-color: #010033;
 
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+      
+li 
+{
+    float: left;
+    margin-top: 5px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+      
+li a 
+{
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    margin: 1em 1em;
+    text-decoration: none;
+    font-size: large;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
 }
 
-.title_text
+#logo
 {
-    color: turquoise;
+    max-width: 3em;
+    min-width: 1em;
+    float: left;
+    padding: 0;
+    margin: 9px 12% 0 20%;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#resume_btn
+{
+    padding: 0.5em 1.3em;
+    color: whitesmoke;
+    text-align: center;
+    font-size: large;
+    border: 3px solid rgb(28, 123, 187);
+    margin-right: 20%;
+    float: right;
+    text-decoration: none;
+    border-radius: 5%;
+    margin-top: 9px;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+a:hover
+{
+    color: rgb(206, 162, 41);
+}
+
+#resume_btn:hover
+{
+    background-color: rgba(0, 153, 255, 0.144);
+    color: rgb(206, 162, 41);
+}
+
+/*  
+    ------------------------------------
+                TITLE PAGE
+    ------------------------------------  
+*/
+
+#title_page
+{
+    display: block;
+    margin: 18% 20%;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#title_page_text
+{
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.first_line
+{
+    color: rgb(67, 149, 204);;
     font-family: 'CalibreRegular';
     font-size: large;
     word-spacing: 10px;
-    letter-spacing: 2px;
-    margin: -300px auto;
+    letter-spacing: 2px; 
+    
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.second_line
+{
+    color: rgb(187, 228, 255);
+    font-family: 'CalibreMedium';
+    font-size: 6em;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.third_line
+{
+    color: rgb(133, 184, 252);
+    font-family: 'CalibreMedium';
+    font-size: 5em;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
 }
 
 .profile_picture
 {
     position: relative;
-    float: left;
     margin: 50pt 50pt;
-    border-radius: 10pt;    
+    border-radius: 5pt;    
     width: 250pt;
     z-index: 2;
-
+    
     /* DEBUG VARIABLES */
     /* border: 4px solid rgb(255, 255, 0); */
 }
 
 .profile_picture_shadow_border
 {
-    position: fixed;
-    top: 180pt;
-    left: 310pt;
+    position: relative;
+    margin: -340pt 35pt;
     height: 293pt;
     width: 250pt;
     border: 4px solid turquoise;
-    border-radius: 4pt;
+    border-radius: 5pt;
     z-index: 1;
 }
+
 .title_description
 {
-    float: left;
-    margin: 50pt 10pt;
-    width: 50%;
-
+    display: relative;
+    width: 60%;
+    margin-top: 50pt;
+    margin-left: 345pt;
     word-spacing: 4px;
     letter-spacing: 1px;
 
     /* DEBUG VARIABLES */
-    /* border: 4px solid rgb(255, 255, 0); */
+     border: 4px solid rgb(255, 255, 0); 
 
 }
-
-#intro_btn
-{
-    float: left;
-    padding: 10pt;
-    border: 2px solid turquoise;
-    border-radius: 5px;
-    width: 8%;
-    margin: 4pt 11pt;
-
-    text-align: center;
-    font-family: 'CalibreRegular';
-    color:whitesmoke;
-    letter-spacing: 1px;
-    font-size: large;
-}
-
-
