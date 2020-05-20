@@ -14,7 +14,7 @@
 
         <!-- CSS -->
         <!-- <link rel="stylesheet" type="text/css" href="styles/skeleton.css"> -->
-        <link rel="stylesheet" type="text/css" href="styles/layout.css">
+        <link rel="stylesheet" type="text/css" href="styles/landing.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
@@ -22,43 +22,63 @@
     <!-- Main Body -->
     <body>       
 
+        <!-- navigation bar -->
         <ul>
 
             <a href='#intro_page'><img id='logo' src='inputs/logo.png'></a>
-            <li><a href='#About'>about</a></li>
-            <li><a href='#Education'>education</a></li>
-            <li><a href='#Work'>work</a></li>
-            <li><a href='#Portfolio'>portfolio</a></li>            
-            <li><a href='#Contact'>contact</a></li>
+            <li><a href='#about'>about</a></li>
+            <li><a href='#education'>education</a></li>
+            <li><a href='#work'>work</a></li>
+            <li><a href='#portfolio'>portfolio</a></li>            
+            <li><a href='#contact'>contact</a></li>
             <a href='inputs/resume.pdf' id='resume_btn'>resume</a>
 
-        </ul>
+        </ul>   
+        <!-- navigation bar -->
         
-        
-        <!-- <div id='title_page'> -->
+        <!-- title page -->
+        <div id='title_page'>
 
-            <div id='title_page'>
+            <span class='first_line'>Hi, my name is </span><br/>
+            <span class='second_line'>Tomer Ziv.</span><br/>
+            <span class='third_line'>I study Computer Science.</span><br/><br/><br/>
+            <a href='#about' id='btn'>about me</a>
 
-                <span class='first_line'>Hi, my name is </span><br/>
-                <span class='second_line'>Tomer Ziv.</span><br/>
-                <span class='third_line'>I study Computer Science.</span><br/><br/><br/>
-                <a href='#about' id='btn'>about me</a>
-                
-                <!--                             
-                <img class='profile_picture' src='inputs/portrait.jpg' alt='Portrait'>
-                <div class='profile_picture_shadow_border'></div>
+        </div>
+        <!-- title page -->
 
-                <p class='title_description'>
+        <div id='about'>
+            
+            <div class='about_title'>
 
-                    I am a Computer Science student at the university of Bath.
-                    <br/> 8 lines more <br/><br/><br/><br/><br/><br/><br/><br/>
-
-                </p> -->
-
+                <img src='inputs/arrow_right.png' class="arrow_right">
+                <h1>About Me</h1>
+            
             </div>
 
-        <!-- </div>  -->
-       
+            <div class='about_description'>
+                                
+                <p>
+                    Born in 2001, I am a British-Israeli computer science student at the 
+                    university of bath, hoping to one day specialize in Cyber Security or 
+                    Artificial Intelligence.
+                </p><br/>
+                <p>
+                    Like most computer geeks I enjoy my share of online gaming, however I 
+                    also have a passion for music, prospering through playing musical instruments 
+                    including the Piano, Guitar, Saxophone, and Clarinet.
+                </p><br/>
+                <p>
+                    I participate in recreational sports including Basketball and Badminton. 
+                    2013 - 2018 I competed professionaly in international Showjumping, 
+                    ultimately stopping to continue my studies. 
+                </p>
+
+            </div>
+            
+            <a href='#contact'><img src='inputs/portrait.jpg' class="portrait"></a>
+
+        </div>
 
     </body>
 
