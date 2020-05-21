@@ -23,32 +23,48 @@
     <body>       
 
         <!-- navigation bar -->
-        <ul>
+        <div id='nav'>     
+                            
+            <div class='nav_block'>
+                
+                <!-- nav bar links -->
+                <ul>
+                    <li><a href='#about'>about</a></li>
+                    <li><a href='#education'>education</a></li>
+                    <li><a href='#work'>work</a></li>
+                    <li><a href='#portfolio'>portfolio</a></li>            
+                    <li><a href='#contact'>contact</a></li>
+                </ul>
+                
+                <!-- logo -->
+                <a href='#intro_page'><img id='logo' src='inputs/logo.png'></a>
 
-            <a href='#intro_page'><img id='logo' src='inputs/logo.png'></a>
-            <li><a href='#about'>about</a></li>
-            <li><a href='#education'>education</a></li>
-            <li><a href='#work'>work</a></li>
-            <li><a href='#portfolio'>portfolio</a></li>            
-            <li><a href='#contact'>contact</a></li>
-            <a href='inputs/resume.pdf' id='resume_btn'>resume</a>
+                <!-- cv button -->
+                <a href='inputs/cv.pdf' id='cv_btn'>cv</a>
 
-        </ul>   
+            </div>          
+        
+        </div>
         <!-- navigation bar -->
         
         <!-- title page -->
         <div id='title_page'>
 
+            <!-- text -->
             <span class='first_line'>Hi, my name is </span><br/>
             <span class='second_line'>Tomer Ziv.</span><br/>
             <span class='third_line'>I study Computer Science.</span><br/><br/><br/>
+            
+            <!-- about me button -->
             <a href='#about' id='btn'>about me</a>
 
         </div>
         <!-- title page -->
 
+        <!-- about page -->
         <div id='about'>
             
+            <!-- about me title -->
             <div class='about_title'>
 
                 <img src='inputs/arrow_right.png' class="arrow_right">
@@ -56,8 +72,10 @@
             
             </div>
 
+            <!-- about me description -->
             <div class='about_description'>
-                                
+                
+                <h3>A brief introduction.</h3>
                 <p>
                     Born in 2001, I am a British-Israeli computer science student at the 
                     university of bath, hoping to one day specialize in Cyber Security or 
@@ -76,9 +94,66 @@
 
             </div>
             
+            <!-- portrait -->
             <a href='#contact'><img src='inputs/portrait.jpg' class="portrait"></a>
 
         </div>
+        <!-- about page -->
+
+        <!-- education page -->
+        <div id='education'>
+            
+            <!-- education title -->
+            <div class='education_title'>
+
+                <h1>Education</h1>
+                <img src='inputs/arrow_left.png' class="arrow_left">
+
+            </div>
+
+            <!-- container for columns -->
+            <div class='education_column_wrapper'>             
+                
+                <!-- institutions column -->
+                <div class='education_institutions'>
+
+                    <h3 class='education_subtitles'>~ Institutions ~</h3>
+                    
+                    <h5>2020 -</h5>
+                    <p>
+                        I am currently enrolled in a 5 year Masters with placement 
+                        year in Computer Science at Bath University.
+                    </p>
+                    <h5>2015 - 2020</h5>
+                    <p>
+                        I Attended Bedales School where I attained 9 IGCSE's and 
+                        3 A-Levels in the subjects: Maths, Further Maths, Physics.
+                    </p>
+                    <br/>
+
+                </div>
+
+                <!-- courses column -->
+                <div class='education_courses'>
+
+                    <h3 class='education_subtitles'>~ Courses ~</h3>
+                    
+                    <h5>A few Certifications I've aquired.</h5>
+                    <ul>
+
+                        <li>Silver Duke of Edinburgh award.</li>
+                        <li>Summer engineering course at Oxford Royal Academy.</li>
+                        <li>The complete Cyber Security and Ethical Hacking course on Udemy.</li>
+                        <li>Several programming languages on SoloLearn.</li>
+                        
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- education page -->
 
     </body>
 
