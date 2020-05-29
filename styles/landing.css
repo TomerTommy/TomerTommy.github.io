@@ -28,16 +28,16 @@ html /* webpage */
 {
     /* position */
 
-    min-height: 100%;
-    width: 100%;
+    overflow-x: hidden;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(51, 255, 0); */
 }
 
-body /* webpage visible component */
+body /* webpage visible container */
 {
     /* position */
 
-    min-height: 100%;
-    width: 100%;
     display: block;
     margin: 0;
 
@@ -225,7 +225,7 @@ a:hover /* link hovering */
     /* style */
 
     box-shadow: 10px 0 10px;
-    background-color: #0100335b;
+    background-color: #010033c2;
 
     /* DEBUG VARIABLES */
     /* border: 4px solid rgb(255, 255, 0); */
@@ -340,6 +340,7 @@ li a /* navigation bar list links */
     color: rgb(206, 162, 41);
 }
 
+
 /*  
     -------------------------------------------------------------------------------
                                     TITLE
@@ -350,18 +351,55 @@ li a /* navigation bar list links */
 {
     /* position */
 
-    display: block;
+    display: block;    
     position: relative;
-    padding: 18% 20%;
-    height: 100%;
-    z-index: 1;
+    padding: 0;
+    min-height: 100vh;
+    z-index: 0;
 
     /* style */
 
     background-color: #010033;
-    background-image: linear-gradient(to right, #010033 40%, #01003318 70%), linear-gradient(to bottom, #010033 10%, #01003334 45%, #010033 91%), url("img/rider.JPG");
-    background-position: left, top, right;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.title_background_img /* title page background image */
+{
+    /* position */
+
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.title_background_gradient /* background colour gradient for title page */
+{
+    /* position */
+    
+    display: block;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+
+    /* style */
+    
+    background-image: linear-gradient(to right, #010033 45%, #01003318 70%), linear-gradient(to bottom, #010033 10%, #01003334 45%, #010033 91%);
+    background-position: left, top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.title_content_wrapper /* div containing all content in title page */
+{
+    /* position */
+
+    display: block;
+    position: absolute;
+    margin: 18% 0 0 20%;
+    z-index: 3;
 
     /* DEBUG VARIABLES */
     /* border: 4px solid rgb(255, 255, 0); */
@@ -409,21 +447,58 @@ li a /* navigation bar list links */
 {
     /* position */
 
-    display: block;
+    display: block;    
     position: relative;
-    padding: 5% 8% 8% 8%;
-    height: 100%;
-    z-index: 1;
+    padding: 0;
+    min-height: 100vh;
+    z-index: 0;
 
     /* style */
 
-    background-color: #091b3b;
-    background-image: linear-gradient(to left, #091b3b 50%, #091b3b2f 70%), linear-gradient(to bottom, #091b3b 10%, #091b3b41 45%, #091b3b 91%), url("img/dog.jpg");
-    background-position: right, top, left;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-color: #010042;
+    
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.about_background_img /* about background image */
+{
+    /* position */
+
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.about_content_wrapper /* all content in about page */
+{
+    /* position */
+
+    display: block;
+    position: absolute;
+    margin: 5% 0 0 13%;
+    z-index: 3;
 
     /* DEBUG VARIABLES */
     /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.about_background_gradient /* about background colour gradient */
+{
+    /* position */
+
+    display: block;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+
+    /* style */
+
+    background-image: linear-gradient(to left, #010042 50%, #0100422f 70%), linear-gradient(to bottom, #010042 2%, #01004241 45%, #010042 98%);
+    background-position: right, top;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .about_title /* about me title */
@@ -445,7 +520,8 @@ li a /* navigation bar list links */
 
     display: inline-block;
     position: relative;
-    margin: 3% 0 0 35%;
+    margin-left: 35%;
+    margin-top: 5%;
     width: 30%;
     
 
@@ -525,18 +601,55 @@ li a /* navigation bar list links */
 {
     /* position */
 
-    display: block;
+    display: block;    
     position: relative;
-    padding: 5% 8% 8% 8%;
-    height: 100%;
+    padding: 0;
+    min-height: 100vh;
     z-index: 1;
 
     /* style */
 
-    background-color: #122547;
-    background-image: linear-gradient(to right, #122547 60%, #12254700 80%), linear-gradient(to bottom, #122547 2%, #12254700 40%, #122547 98%), url("img/resized_waterfall.JPG");
-    background-position: left, top, top right;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-color: #010050;
+    
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.education_background_img /* education background image */
+{
+    /* position */
+
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.education_background_gradient /* background colour gradient */
+{
+    /* position */
+
+    display: block;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+
+    /* style */
+
+    background-image: linear-gradient(to right, #010050 60%, #01005000 80%), linear-gradient(to bottom, #010050a6 0.2%, #01005000 40%, #010050 98%);
+    background-position: left, top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.education_content_wrapper /* div containing all page content */
+{
+    /* position */
+
+    display: block;
+    position: absolute;
+    margin: 5% 0 0 13%;
+    z-index: 3;
 
     /* DEBUG VARIABLES */
     /* border: 4px solid rgb(255, 255, 0); */
@@ -555,7 +668,7 @@ li a /* navigation bar list links */
 
 }
 
-.education_column_wrapper
+.education_column_wrapper /* div containing discription of work */
 {
     /* position */
 
@@ -618,18 +731,54 @@ li a /* navigation bar list links */
 {
     /* position */
 
-    display: block;
+    display: block;    
     position: relative;
-    padding: 5% 8% 8% 8%;
-    height: 100%;
+    padding: 0;
+    min-height: 100vh;
     z-index: 1;
 
     /* style */
 
-    background-color: rgb(26, 58, 85);
-    background-image: linear-gradient(to left, rgb(26, 58, 85) 62%, rgba(26, 58, 85, 0) 80%), linear-gradient(to bottom, rgb(26, 58, 85) 1%, rgba(26, 58, 85, 0) 15%, rgb(26, 58, 85) 98%), url("img/resized_monkey.JPG");
-    background-position: right, top, bottom left;
-    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-color: rgb(0, 9, 90);
+    
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.work_background_img /* work page background image */
+{
+    /* position */
+
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.work_background_gradient /* background colour gradient for work page */
+{
+    /* position */
+    display: block;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+
+    /* style */
+
+    background-image: linear-gradient(to left, rgb(0, 9, 90) 65%, rgba(0, 9, 90, 0) 85%), linear-gradient(to bottom, rgb(0, 9, 90) 5%, rgba(0, 9, 90, 0) 15%, rgb(0, 9, 90) 98%);
+    background-position: right, top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.work_content_wrapper /* div containing all content in work page */
+{
+    /* position */
+
+    display: block;
+    position: absolute;
+    margin: 5% 5% 0 10%;
+    z-index: 3;
 
     /* DEBUG VARIABLES */
     /* border: 4px solid rgb(255, 255, 0); */
@@ -654,7 +803,7 @@ li a /* navigation bar list links */
 
     display: block;
     position: relative;
-    margin-left: 35%;
+    margin: 3% 0 0 35%;
     width: 70%;
 
     /* DEBUG VARIABLES */
@@ -695,13 +844,6 @@ a.work /* any hyperlink in text */
     font-style: italic;
     text-decoration: none;
     color: whitesmoke;
-}
-
-a.work:hover /* hyperlink in text hover action */
-{
-    /* style */
-
-    color: rgb(206, 162, 41);
 }
 
 #work_b3d /* text for Beyon3D (work) */
@@ -853,3 +995,279 @@ a.work:hover /* hyperlink in text hover action */
     border-left: 3px solid rgb(28, 123, 187);
 }
 
+/*  
+    -------------------------------------------------------------------------------
+                                 PORTFOLIO 1 (SKILLS)
+    -------------------------------------------------------------------------------
+*/
+
+#portfolio_skills /* work page layout */
+{
+    /* position */
+
+    display: block;    
+    position: relative;
+    padding: 0;
+    min-height: 100vh;
+    z-index: 0;
+
+    /* style */
+
+    background-color: rgb(0, 11, 105);
+    
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.portfolio_skills_background_img /* background image for portfolio page */
+{
+    /* position */
+
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    width: 50vw;
+}
+
+.portfolio_skills_background_gradient /* portfolio page gackground colour gradient */
+{
+    /* position */
+
+    display: block;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+
+    /* style */
+
+    background-image: linear-gradient(to right, rgb(0, 11, 105) 50%, rgb(0, 11, 105, 0) 75%), linear-gradient(to bottom, rgba(0, 11, 105, 0.5) 0.2%, rgb(0, 11, 105, 0) 25%, rgb(0, 11, 105) 75%);
+    background-position: left, top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.portfolio_skills_content_wrapper /* div containing all content in portfolio page */
+{
+    /* position */
+
+    display: block;
+    position: absolute;
+    margin: 5% 5% 0 10%;
+    z-index: 3;
+    width: 80vw;
+    height: 80vh;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.portfolio_skills_title /* portfolio page title */
+{
+    /* position */
+
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    vertical-align: top;
+    text-align: top;
+    margin-top: -3%;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+
+}
+
+.portforio_skills_tools_wrapper /* div containing tools section */
+{
+    /* position */
+
+    position: absolute;
+    width: 41%;
+    top: 30%;
+    left: 43%;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.portforio_skills_platforms_wrapper /* div containing platforms section */
+{
+    /* position */
+
+    position: absolute;
+    width: 41%;
+    top: 65%;
+    left: 43%;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.portforio_skills_programming_languages_wrapper /* div containing programming languages section */
+{
+    /* position */
+    
+    display: block;
+    position: relative;
+    width: 41%;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.portforio_skills_languages_wrapper /* div containing spoken languages section */
+{
+    /* position */
+
+    display: block;
+    position: relative;
+    width: 41%;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#skill_list /* skill unordered list style */
+{
+    /* style */
+
+    list-style: none;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#skill_list li /* skill unordered list item (progress bar) */
+{
+    /* position */
+
+    position: relative;
+    width: 80%;
+    height: 5px;
+    margin: 30px 0 0 40px;
+
+    /* style */
+    
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.329);
+    border-left: 1px solid #111;
+    border-top: 1px solid #111;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#skill_list li em /* skill unordered list item text */
+{
+    /* position */
+
+    position: relative;
+    top: -7px;
+    left: -80px;
+
+    /* style */
+
+    font-family: 'FabyenDemo';
+    color: whitesmoke;    
+}
+
+.portforio_skills_tools_wrapper #skill_list li em, .portforio_skills_platforms_wrapper #skill_list li em /* tools and plantforms sections list item text */
+{
+    /* position */
+    
+    position: relative;
+    top: -7px;
+    left: -160px;
+    
+    /* style */
+
+    font-family: 'FabyenDemo';
+    color: whitesmoke;
+}
+
+.portforio_skills_tools_wrapper h5, .portforio_skills_platforms_wrapper h5 /* tools and plantforms sections subtitles */
+{
+    /* position */
+
+    position: relative;
+    left: -80px;
+}
+
+.portforio_skills_expand /* expanding progress bar */
+{
+    /* position */
+
+    height: 1px;
+    margin: 2px 0;
+    position: absolute;
+    
+    /* style */
+
+    box-shadow: 0px 0px 10px 1px rgba(233, 255, 31, 0.4);
+    background: rgb(206, 162, 41);
+}
+
+/* skill list item progress bar transitions */
+
+/* programming languages */
+.csharp { width: 0%; animation: csharp 1s 100ms ease-in-out; animation-fill-mode: forwards;}
+.java { width: 0%; animation: java 1s 200ms ease-in-out; animation-fill-mode: forwards}
+.css { width: 0%; animation: css 1s 300ms ease-in-out; animation-fill-mode: forwards}
+.html { width: 0%; animation: html 1s 400ms ease-in-out; animation-fill-mode: forwards}
+.javaScript { width: 0%; animation: javaScript 1s 500ms ease-in-out; animation-fill-mode: forwards}
+.python { width: 0%; animation: python 1s 600ms ease-in-out; animation-fill-mode: forwards}
+.cpp { width: 0%; animation: cpp 1s 700ms ease-in-out; animation-fill-mode: forwards}
+
+/* spoken languages */
+.english { width: 0%; animation: english 1s 800ms ease-in-out; animation-fill-mode: forwards}
+.hebrew { width: 0%; animation: hebrew 1s 900ms ease-in-out; animation-fill-mode: forwards;}
+.spanish { width: 0%; animation: spanish 1s 1000ms ease-in-out; animation-fill-mode: forwards}
+
+/* tools */
+.VS { width: 0%; animation: VS 1s 1100ms ease-in-out; animation-fill-mode: forwards}
+.vs_code { width: 0%; animation: vs_code 1s 1200ms ease-in-out; animation-fill-mode: forwards}
+.intellij { width: 0%; animation: intellij 1s 1300ms ease-in-out; animation-fill-mode: forwards}
+.excel { width: 0%; animation: excel 1s 1400ms ease-in-out; animation-fill-mode: forwards;}
+.solidworks { width: 0%; animation: solidworks 1s 1500ms ease-in-out; animation-fill-mode: forwards}
+
+/* platforms */
+.windows { width: 0%; animation: windows 1s 1600ms ease-in-out; animation-fill-mode: forwards}
+.linux { width: 0%; animation: linux 1s 1700ms ease-in-out; animation-fill-mode: forwards}
+.osx { width: 0%; animation: osx 1s 1800ms ease-in-out; animation-fill-mode: forwards}
+
+/* progress bar transition specifications (keyframes) */
+
+/* programming languages */
+@keyframes csharp {0% {width: 0px;} 100% {width: 80%;};}
+@keyframes java {0% {width: 0px;} 100% {width: 75%;};}
+@keyframes css {0% {width: 0px;} 100% {width: 70%;};}
+@keyframes html {0% {width: 0px;} 100% {width: 65%;};}
+@keyframes javaScript {0% {width: 0px;} 100% {width: 60%;};}
+@keyframes python {0% {width: 0px;} 100% {width: 40%;};}
+@keyframes cpp {0% {width: 0px;} 100% {width: 30%;};}
+
+/* spoken languages */
+@keyframes english {0% {width: 0px;} 100% {width: 95%;};}
+@keyframes hebrew {0% {width: 0px;} 100% {width: 90%;};}
+@keyframes spanish {0% {width: 0px;} 100% {width: 50%;};}
+
+/* tools */
+@keyframes VS {0% {width: 0px;} 100% {width: 80%;};}
+@keyframes vs_code {0% {width: 0px;} 100% {width: 80%;};}
+@keyframes intellij {0% {width: 0px;} 100% {width: 70%;};}
+@keyframes excel {0% {width: 0px;} 100% {width: 50%;};}
+@keyframes solidworks {0% {width: 0px;} 100% {width: 40%;};}
+
+/* platforms */
+@keyframes windows {0% {width: 0px;} 100% {width: 85%;};}
+@keyframes linux {0% {width: 0px;} 100% {width: 75%;};}
+@keyframes osx {0% {width: 0px;} 100% {width: 55%;};}
+
+/*  
+    -------------------------------------------------------------------------------
+                                 PORTFOLIO 2 (WORK)
+    -------------------------------------------------------------------------------
+*/
