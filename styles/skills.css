@@ -1,0 +1,274 @@
+/*  
+    -------------------------------------------------------------------------------
+                                         SKILLS
+    -------------------------------------------------------------------------------
+*/
+
+#skills /* skills page layout */
+{
+    /* position */
+
+    display: block;    
+    position: relative;
+    padding: 0;
+    min-height: 100vh;
+    z-index: 0;
+
+    /* style */
+
+    background-color: rgb(0, 11, 105);
+    
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.skills_background_img /* background image for skills page */
+{
+    /* position */
+
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    top: 0;
+    width: 50vw;
+}
+
+.skills_background_gradient /* skills page gackground colour gradient */
+{
+    /* position */
+
+    display: block;
+    position: relative;
+    height: 100vh;
+    z-index: 2;
+
+    /* style */
+
+    background-image: linear-gradient(to right, rgb(0, 11, 105) 50%, rgb(0, 11, 105, 0) 75%), linear-gradient(to bottom, rgba(0, 11, 105, 0.5) 0.2%, rgb(0, 11, 105, 0) 25%, rgb(0, 11, 105) 75%);
+    background-position: left, top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.skills_content_wrapper /* div containing all content in skills page */
+{
+    /* position */
+
+    display: block;
+    position: absolute;
+    margin: 5% 5% 0 10%;
+    z-index: 3;
+    width: 80vw;
+    height: 80vh;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.skills_title /* skills page title */
+{
+    /* position */
+
+    display: block;
+    position: relative;
+    /* width: 50%; */
+    text-align: top;
+    margin-top: -3%;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+
+}
+
+.skills_tools_wrapper /* div containing tools section */
+{
+    /* position */
+
+    display: inline-block;
+    position: relative;
+    width: 41%;
+    vertical-align: top;
+    margin-left: 40px;
+    margin-top: 4.5%;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.skills_platforms_wrapper /* div containing platforms section */
+{
+    /* position */
+
+    display: inline-block;
+    position: relative;
+    width: 41%;
+    vertical-align: top;
+    margin-left: 40px;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.skills_programming_languages_wrapper /* div containing programming languages section */
+{
+    /* position */
+    
+    display: inline-block;
+    position: relative;
+    width: 41%;
+    vertical-align: top;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.skills_languages_wrapper /* div containing spoken languages section */
+{
+    /* position */
+
+    display: inline-block;
+    position: relative;
+    width: 41%;
+    vertical-align: top;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#skill_list /* skill unordered list style */
+{
+    /* style */
+
+    list-style: none;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#skill_list li /* skill unordered list item (progress bar) */
+{
+    /* position */
+
+    position: relative;
+    width: 80%;
+    height: 5px;
+    margin: 30px 0 0 40px;
+
+    /* style */
+    
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.329);
+    border-left: 1px solid #111;
+    border-top: 1px solid #111;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#skill_list li em /* skill unordered list item text */
+{
+    /* position */
+
+    position: relative;
+    top: -7px;
+    left: -80px;
+
+    /* style */
+
+    font-family: 'FabyenDemo';
+    color: whitesmoke;    
+}
+
+.skills_tools_wrapper #skill_list li em, .skills_platforms_wrapper #skill_list li em /* tools and plantforms sections list item text */
+{
+    /* position */
+    
+    position: relative;
+    top: -7px;
+    left: -160px;
+    
+    /* style */
+
+    font-family: 'FabyenDemo';
+    color: whitesmoke;
+}
+
+.skills_tools_wrapper h5, .skills_platforms_wrapper h5 /* tools and plantforms sections subtitles */
+{
+    /* position */
+
+    position: relative;
+    left: -80px;
+}
+
+.skills_expand /* expanding progress bar */
+{
+    /* position */
+
+    height: 1px;
+    margin: 2px 0;
+    position: absolute;
+    
+    /* style */
+
+    box-shadow: 0px 0px 10px 1px rgba(233, 255, 31, 0.4);
+    background: rgb(206, 162, 41);
+}
+
+/* skill list item progress bar transitions */
+
+/* programming languages */
+.csharp { width: 0%; animation: csharp 1s 100ms ease-in-out; animation-fill-mode: forwards;}
+.java { width: 0%; animation: java 1s 200ms ease-in-out; animation-fill-mode: forwards}
+.css { width: 0%; animation: css 1s 300ms ease-in-out; animation-fill-mode: forwards}
+.html { width: 0%; animation: html 1s 400ms ease-in-out; animation-fill-mode: forwards}
+.javaScript { width: 0%; animation: javaScript 1s 500ms ease-in-out; animation-fill-mode: forwards}
+.python { width: 0%; animation: python 1s 600ms ease-in-out; animation-fill-mode: forwards}
+.cpp { width: 0%; animation: cpp 1s 700ms ease-in-out; animation-fill-mode: forwards}
+
+/* spoken languages */
+.english { width: 0%; animation: english 1s 800ms ease-in-out; animation-fill-mode: forwards}
+.hebrew { width: 0%; animation: hebrew 1s 900ms ease-in-out; animation-fill-mode: forwards;}
+.spanish { width: 0%; animation: spanish 1s 1000ms ease-in-out; animation-fill-mode: forwards}
+
+/* tools */
+.vs_code { width: 0%; animation: vs_code 1s 1100ms ease-in-out; animation-fill-mode: forwards}
+.VS { width: 0%; animation: VS 1s 1200ms ease-in-out; animation-fill-mode: forwards}
+.intellij { width: 0%; animation: intellij 1s 1300ms ease-in-out; animation-fill-mode: forwards}
+.arduino { width: 0%; animation: arduino 1s 1400ms ease-in-out; animation-fill-mode: forwards}
+.solidworks { width: 0%; animation: solidworks 1s 1600ms ease-in-out; animation-fill-mode: forwards}
+
+/* platforms */
+.windows { width: 0%; animation: windows 1s 1700ms ease-in-out; animation-fill-mode: forwards}
+.linux { width: 0%; animation: linux 1s 1800ms ease-in-out; animation-fill-mode: forwards}
+.osx { width: 0%; animation: osx 1s 1900ms ease-in-out; animation-fill-mode: forwards}
+
+/* progress bar transition specifications (keyframes) */
+
+/* programming languages */
+@keyframes csharp {0% {width: 0px;} 100% {width: 80%;};}
+@keyframes java {0% {width: 0px;} 100% {width: 75%;};}
+@keyframes css {0% {width: 0px;} 100% {width: 70%;};}
+@keyframes html {0% {width: 0px;} 100% {width: 65%;};}
+@keyframes javaScript {0% {width: 0px;} 100% {width: 60%;};}
+@keyframes python {0% {width: 0px;} 100% {width: 40%;};}
+@keyframes cpp {0% {width: 0px;} 100% {width: 30%;};}
+
+/* spoken languages */
+@keyframes english {0% {width: 0px;} 100% {width: 95%;};}
+@keyframes hebrew {0% {width: 0px;} 100% {width: 90%;};}
+@keyframes spanish {0% {width: 0px;} 100% {width: 50%;};}
+
+/* tools */
+@keyframes vs_code {0% {width: 0px;} 100% {width: 80%;};}
+@keyframes VS {0% {width: 0px;} 100% {width: 75%;};}
+@keyframes intellij {0% {width: 0px;} 100% {width: 70%;};}
+@keyframes arduino {0% {width: 0px;} 100% {width: 70%;};}
+@keyframes solidworks {0% {width: 0px;} 100% {width: 40%;};}
+
+/* platforms */
+@keyframes windows {0% {width: 0px;} 100% {width: 85%;};}
+@keyframes linux {0% {width: 0px;} 100% {width: 75%;};}
+@keyframes osx {0% {width: 0px;} 100% {width: 55%;};}

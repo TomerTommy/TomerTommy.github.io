@@ -8,7 +8,8 @@
         <meta charset="utf-8">
         <meta name="keywords" content="programmer, coding, c, python, english, software developer" />
         <meta name="description" content="Software developer interested in Ai and Robotics."/>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <!-- Webpage title and logo -->
         <title>Tomer Ziv</title>
         <link rel="icon" type="image/png" href="inputs/logo.png">
@@ -16,6 +17,14 @@
         <!-- CSS -->
         <!-- <link rel="stylesheet" type="text/css" href="styles/skeleton.css"> -->
         <link rel="stylesheet" type="text/css" href="styles/landing.css">
+        <link rel="stylesheet" type="text/css" href="styles/nav.css">
+        <link rel="stylesheet" type="text/css" href="styles/title.css">
+        <link rel="stylesheet" type="text/css" href="styles/about.css">
+        <link rel="stylesheet" type="text/css" href="styles/education.css">
+        <link rel="stylesheet" type="text/css" href="styles/work.css">
+        <link rel="stylesheet" type="text/css" href="styles/skills.css">
+        <link rel="stylesheet" type="text/css" href="styles/skills.css">
+        <link rel="stylesheet" type="text/css" href="styles/contact.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- JS scripts -->
@@ -34,15 +43,16 @@
                 
                 <!-- nav bar links -->
                 <ul>
+                    <li><a href='#title_page'>home</a></li>
                     <li><a href='#about'>about</a></li>
                     <li><a href='#education'>education</a></li>
                     <li><a href='#work'>work</a></li>
-                    <li><a href='#portfolio'>portfolio</a></li>            
-                    <li><a href='#contact'>contact</a></li>
+                    <li><a href='#skills'>skills</a></li>
+                    <li><a href='#contact'>contact</a></li>                        
                 </ul>
                 
                 <!-- logo -->
-                <a href='#intro_page'><img id='logo' src='inputs/logo.png'></a>
+                <a href='#intro_page'><img id='logo' src='data/logo.png'></a>
 
                 <!-- cv button -->
                 <a href='inputs/cv.pdf' id='cv_btn'>cv</a>
@@ -56,7 +66,7 @@
         <div id='title_page'>
 
             <!-- page background image -->
-            <img class='title_background_img' src='inputs/rider.JPG'>
+            <img class='title_background_img' src='data/rider.JPG'>
 
             <!-- page background colour gradient -->
             <div class='title_background_gradient'>
@@ -83,7 +93,7 @@
         <div id='about'>
 
             <!-- page background image -->
-            <img class='about_background_img' src='inputs/dog.jpg'>
+            <img class='about_background_img' src='data/dog.jpg'>
 
             <!-- background colour gradient -->
             <div class='about_background_gradient'>              
@@ -91,37 +101,30 @@
                 <!-- wrapper for all page content -->
                 <div class='about_content_wrapper'>
 
-                    <!-- about me title -->
-                    <div class='about_title'>
-
-                        <img src='inputs/arrow_right.png' class="arrow_right">
-                        <h1>About Me</h1>
-                    
-                    </div>
-
                     <!-- about me description -->
                     <div class='about_description'>
                         
+                        <h2>A brief introduction.</h2>
                         <p>
                             Born in 2001, I am a British-Israeli computer science student at the 
                             University of Bath, hoping to one day specialize in Cyber Security or 
                             Artificial Intelligence.
                         </p><br/>
                         <p>
-                            Like most computer geeks I enjoy my share of online gaming, however I 
-                            also have a passion for music, prospering through playing musical instruments 
+                            Like most computer geeks I enjoy my share of online gaming, I 
+                            also have a passion for music, playing musical instruments 
                             including the Piano, Guitar, Saxophone, and Clarinet.
                         </p><br/>
                         <p>
                             I participate in recreational sports including Basketball and Badminton. 
                             2013 - 2018 I competed professionaly in international Showjumping, 
-                            ultimately stopping to continue my studies. 
+                            ultimately stopping to continue my studies.
                         </p>
 
                     </div>
                     
                     <!-- portrait -->
-                    <a href='#contact'><img src='inputs/portrait.jpg' class="portrait"></a>
+                    <a href='#contact'><img src='data/portrait.jpg' class="portrait"></a>
 
                 </div>
             
@@ -134,7 +137,7 @@
         <div id='education'>
             
             <!-- page background image -->
-            <img class='education_background_img' src='inputs/resized_waterfall.JPG'>
+            <img class='education_background_img' src='data/resized_waterfall.JPG'>
 
             <!-- background colour gradient -->
             <div class='education_background_gradient'>
@@ -142,30 +145,21 @@
                 <!-- wrapper for all page content -->
                 <div class='about_content_wrapper'>
 
-                    <!-- education title -->
-                    <div class='education_title'>
-
-                        <h1>Education</h1>
-                        <img src='inputs/arrow_left.png' class="arrow_left">
-
-                    </div>
-
                     <!-- container for columns -->
                     <div class='education_column_wrapper'>             
                         
                         <!-- institutions column -->
                         <div class='education_institutions'>
 
-                            <h3 class='column_subtitles'>Institutions</h3>
-                            
-                            <h5>2020 -</h5>
+                            <h2>Institutions I've attended.</h2>
+                            <h5>2020 - 2025 @  <a class='text_link' href='https://www.bath.ac.uk/' target='_blank'>University of Bath</a></h5>
                             <p>
                                 I am currently enrolled in a 5 year Masters with placement 
                                 year in Computer Science at Bath University.
                             </p>
-                            <h5>2015 - 2020</h5>
+                            <h5>2015 - 2020 @  <a class='text_link' href='https://www.bedales.org.uk/' target='_blank'>Bedales School</a></h5>
                             <p>
-                                I Attended Bedales School where I attained 9 IGCSE's and 
+                                I Attended Bedales High School where I attained 9 IGCSE's and 
                                 3 A-Levels in the subjects: Maths, Further Maths, Physics.
                             </p>
 
@@ -174,13 +168,11 @@
                         <!-- courses column -->
                         <div class='education_courses'>
 
-                            <h3 class='column_subtitles'>Courses</h3>
-                            
-                            <h5>A few Qualifications I've aquired.</h5>
+                            <h2>Courses I've completed.</h2>
                             <ul>
 
                                 <li>Silver Duke of Edinburgh award.</li>
-                                <li>Summer engineering course at Oxford Royal Academy.</li>
+                                <li>Summer engineering course at Oxford Royale Academy,<br/>finnishing with the honor award for attainment in Engineering.</li>
                                 <li>The complete Cyber Security and Ethical Hacking course on Udemy.</li>
                                 <li>Several programming languages on SoloLearn.</li>
                                 
@@ -201,7 +193,7 @@
         <div id='work'>
 
             <!-- page background image -->
-            <img class='work_background_img' src='inputs/resized_monkey.JPG'>
+            <img class='work_background_img' src='data/resized_monkey.JPG'>
 
             <!-- background colour gradient -->
             <div class='work_background_gradient'>
@@ -209,18 +201,10 @@
                 <!-- wrapper for all page content -->
                 <div class='work_content_wrapper'>
 
-                    <!-- work title -->
-                    <div class='work_title'>
-
-                        <img src='inputs/arrow_right.png' class="arrow_right">
-                        <h1>Work</h1>
-                    
-                    </div>
-
                     <!-- all work text (box container) -->
                     <div class='work_column_wrapper'>
                         
-                        <h3 class='work_column_title'>Some places I've worked.</h3>
+                        <h2 class='work_column_title'>Some places I've worked.</h2>
 
                         <!-- work navigation column with buttons -->
                         <div class='work_nav_column'>
@@ -236,9 +220,9 @@
                             <!-- Beyon3D text -->
                             <div id='work_b3d'>
 
-                                <h5>Jul 2018  @  Beyon3D</h5>
+                                <h5>Jul 2018  @  <a class='text_link' href='https://beyon3d.com/' target='_blank'>Beyon3D</a></h5>
                                 <p>
-                                    In 2018 I worked for a few weeks as an intern in <a class='work' href='https://beyon3d.com/'>Beyon3D</a>, 
+                                    In 2018 I worked for a few weeks as an intern in Beyon3D, 
                                     a high-tech startup company based in hertzelia-pituach, israel. 
                                     I worked alongside professionals with years of engineering experience exposing 
                                     me to many different disciplines within the single workspace.
@@ -273,6 +257,98 @@
                                     with a more academic life path.
                                 </p>
 
+                                <h2>Some images of my work.</h2>
+
+                                <div class="row">
+
+                                    <div class="column">
+
+                                        <img src="data/hhe_work/1040-351_7765.JPG" style="width:100%" onclick="openModal(); currentSlide(1)" class="hover-shadow cursor">
+
+                                    </div>
+                                    <div class="column">
+
+                                        <img src="data/hhe_work/1040-351_7773.JPG" style="width:100%" onclick="openModal(); currentSlide(2)" class="hover-shadow cursor">
+
+                                    </div>
+                                    <div class="column">
+
+                                        <img src="data/hhe_work//1055-333_8901.JPG" style="width:100%" onclick="openModal(); currentSlide(3)" class="hover-shadow cursor">
+
+                                    </div>
+                                    <div class="column">
+
+                                        <img src="data/hhe_work/WhatsApp Image 2018-04-22 at 15.42.49.jpeg" style="width:100%" onclick="openModal(); currentSlide(4)" class="hover-shadow cursor">
+
+                                    </div>
+
+                                </div>
+
+                                <div id="myModal" class="modal">
+
+                                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                                    
+                                    <div class="modal-content">
+
+                                        <div class="slides">
+
+                                            <div class="numbertext">1 / 4</div>
+                                            <img src="data/hhe_work/1040-351_7765.JPG" style="width:100%">
+
+                                        </div>
+                                        <div class="slides">
+
+                                            <div class="numbertext">2 / 4</div>
+                                            <img src="data/hhe_work/1040-351_7773.JPG" style="width:100%">
+
+                                        </div>
+                                        <div class="slides">
+
+                                            <div class="numbertext">3 / 4</div>
+                                            <img src="data/hhe_work//1055-333_8901.JPG" style="width:100%">
+
+                                        </div>                                        
+                                        <div class="slides">
+
+                                            <div class="numbertext">4 / 4</div>
+                                            <img src="data/hhe_work/WhatsApp Image 2018-04-22 at 15.42.49.jpeg" style="width:100%">
+
+                                        </div>
+
+                                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                                        <div class="caption-container">
+
+                                            <p id="caption"></p>
+
+                                        </div>
+
+                                        <div class="column">
+                                            
+                                            <img class="demo cursor" src="data/hhe_work/1040-351_7765.JPG" style="width:100%" onclick="currentSlide(1)" alt="Global Champions Tour, Paris, Jul 2018: Chaska II.">
+
+                                        </div>
+                                        <div class="column">
+
+                                            <img class="demo cursor" src="data/hhe_work/1040-351_7773.JPG" style="width:100%" onclick="currentSlide(2)" alt="Global Champions Tour Paris Jul 2018: Bambina, Prize Giving.">
+
+                                        </div>
+                                        <div class="column">
+
+                                            <img class="demo cursor" src="data/hhe_work//1055-333_8901.JPG" style="width:100%" onclick="currentSlide(3)" alt="Tops International Arena Valkenswaard May 2018: Chaska II.">
+
+                                        </div>
+                                        <div class="column">
+
+                                            <img class="demo cursor" src="data/hhe_work/WhatsApp Image 2018-04-22 at 15.42.49.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Oliva Nova Valencia/Alicante Apr 2018: Bambina.">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
                             </div>
 
                         </div>
@@ -286,89 +362,81 @@
         </div>
         <!-- work page -->
 
-        <!-- portfolio page 1 (skills) -->
-        <div id='portfolio_skills'>
+        <!-- skills page -->
+        <div id='skills'>
 
             <!-- page background image -->
-            <img class='portfolio_skills_background_img' src='inputs/lion.jpg'>
+            <img class='skills_background_img' src='data/lion.jpg'>
 
             <!-- background colour gradient -->
-            <div class='portfolio_skills_background_gradient'>
+            <div class='skills_background_gradient'>
 
                 <!-- wrapper for all page content -->
-                <div class='portfolio_skills_content_wrapper'>
+                <div class='skills_content_wrapper'>
 
-                    <!-- portfolio title -->
-                    <div class='portfolio_skills_title'>
-
-                        <h1>portfolio</h1>
-                        <img src='inputs/arrow_left.png' class="arrow_left">
-                    
-                    </div>
+                    <h2>Some skills I've aquired.</h2>
 
                     <!-- programming languages section -->
-                    <div class='portforio_skills_programming_languages_wrapper'>
-
-                        <h3>Some skills I've aquired.</h3>
+                    <div class='skills_programming_languages_wrapper'>
                         
                         <h5>Programming languages I know.</h5>
 
                         <ul id="skill_list">
 
-                            <li><span class="portforio_skills_expand csharp"></span><em>C#</em></li>
-                            <li><span class="portforio_skills_expand java"></span><em>Java</em></li>
-                            <li><span class="portforio_skills_expand css"></span><em>CSS</em></li>
-                            <li><span class="portforio_skills_expand html"></span><em>HTML</em></li>                                
-                            <li><span class="portforio_skills_expand javaScript"></span><em>JavaScript</em></li>
-                            <li><span class="portforio_skills_expand python"></span><em>Python</em></li>
-                            <li><span class="portforio_skills_expand cpp"></span><em>C++</em></li>
+                            <li><span class="skills_expand csharp"></span><em>C#</em></li>
+                            <li><span class="skills_expand java"></span><em>Java</em></li>
+                            <li><span class="skills_expand css"></span><em>CSS</em></li>
+                            <li><span class="skills_expand html"></span><em>HTML</em></li>                                
+                            <li><span class="skills_expand javaScript"></span><em>JavaScript</em></li>
+                            <li><span class="skills_expand python"></span><em>Python</em></li>
+                            <li><span class="skills_expand cpp"></span><em>C++</em></li>
 
                         </ul>
 
                     </div>
 
-                    <!-- spoken languages section -->                    
-                    <div class='portforio_skills_languages_wrapper'>
-
-                        <h5>Languages I speak.</h5>
-
-                        <ul id="skill_list">
-                            
-                            <li><span class="portforio_skills_expand english"></span><em>English</em></li>
-                            <li><span class="portforio_skills_expand hebrew"></span><em>Hebrew</em></li>                            
-                            <li><span class="portforio_skills_expand spanish"></span><em>Spanish</em></li>
-
-                        </ul>
-
-                    </div>
-                    
                     <!-- tools section -->
-                    <div class='portforio_skills_tools_wrapper'>
+                    <div class='skills_tools_wrapper'>
 
                         <h5>Tools I've used.</h5>
 
                         <ul id="skill_list">
 
-                            <li><span class="portforio_skills_expand VS"></span><em>Visual Studio</em></li>
-                            <li><span class="portforio_skills_expand vs_code"></span><em>VS_Code</em></li>
-                            <li><span class="portforio_skills_expand intellij"></span><em>JetBrains Intellij</em></li>
-                            <li><span class="portforio_skills_expand excel"></span><em>Microsoft Office Excel</em></li>                                
-                            <li><span class="portforio_skills_expand solidworks"></span><em>SolidWorks</em></li>
+                            <li><span class="skills_expand vs_code"></span><em>VS_Code</em></li>
+                            <li><span class="skills_expand VS"></span><em>Visual Studio</em></li>
+                            <li><span class="skills_expand intellij"></span><em>JetBrains Intellij</em></li>
+                            <li><span class="skills_expand arduino"></span><em>Arduino</em></li>
+                            <li><span class="skills_expand solidworks"></span><em>SolidWorks</em></li>
 
                         </ul>                        
 
                     </div>
 
+                    <!-- spoken languages section -->                    
+                    <div class='skills_languages_wrapper'>
+
+                        <h5>Languages I speak.</h5>
+
+                        <ul id="skill_list">
+                            
+                            <li><span class="skills_expand english"></span><em>English</em></li>
+                            <li><span class="skills_expand hebrew"></span><em>Hebrew</em></li>                            
+                            <li><span class="skills_expand spanish"></span><em>Spanish</em></li>
+
+                        </ul>
+
+                    </div>                 
+                    
                     <!-- platforms section-->
-                    <div class='portforio_skills_platforms_wrapper'>
+                    <div class='skills_platforms_wrapper'>
 
                         <h5>Platforms I've worked on.</h5>
 
                         <ul id="skill_list">
                             
-                            <li><span class="portforio_skills_expand windows"></span><em>Windows</em></li>
-                            <li><span class="portforio_skills_expand linux"></span><em>Linux Debian</em></li>                            
-                            <li><span class="portforio_skills_expand osx"></span><em>OSX</em></li>
+                            <li><span class="skills_expand windows"></span><em>Windows</em></li>
+                            <li><span class="skills_expand linux"></span><em>Linux Debian</em></li>                            
+                            <li><span class="skills_expand osx"></span><em>OSX</em></li>
 
                         </ul>
 
@@ -379,10 +447,43 @@
             </div>
 
         </div>
-        <!-- portfolio page 1 (skills) -->
+        <!-- skills page -->
+
+        <!-- contact page -->
+        <div id='contact'>
+
+            <hr class='gradient_style'>
+
+            <div class='contact_content_wrapper'>
+
+                <h2 class='contact_title'>Get in touch.</h2>
+
+                <div class='contact_info'>
+
+                    <p class='contact_text'>
+                        Feel free to contact me anytime via any of the following social media
+                        websites. I'm always happy to build new bridges.
+                    </p>
+
+                    <a href="mailto:tziv.org@gmail.com" target="_blank"><img class='contact_icon' src='data/icons/email.png'></a>
+                    <a href="https://github.com/TomerTommy" target="_blank"><img class='contact_icon' src='data/icons/github.png'></a>
+                    <a href="https://www.instagram.com/tomerziv3/" target="_blank"><img class='contact_icon' src='data/icons/instagram.png'></a>
+                    <a href="https://www.youtube.com/user/tomtomziv" target="_blank"><img class='contact_icon' src='data/icons/youtube.png'></a>
+
+                    <p class='contact_text'><a class='contact_text_link' href='https://github.com/TomerTommy/TomerTommy.github.io' target="_blank">Designed and built by Tomer Ziv</a></p>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- contact page -->
+
 
         <!-- JS scripts -->
         <script src='scripts/work_text.js'></script>
+        <script src='scripts/navbar_hide.js'></script>
+        <script src='scripts/work_image_lightbox.js'></script>
 
     </body>
     <!-- Main body -->

@@ -6,10 +6,10 @@ var workColumn = document.getElementById("work_column");
 var hhe = document.getElementById("work_hhe");
 var b3d = document.getElementById("work_b3d");
 
-// Auto focus the Beyon3D button when page loads for less confusion
+// Auto focus the Hill House Equine Ltd. button when page loads for less confusion
 window.onload = function() 
 {
-    document.getElementById("b3d_button").focus();
+    document.getElementById("hhe_button").focus();
 }
 
 // Function to change text to Hill House Equine Ltd. text

@@ -1,0 +1,142 @@
+/*  
+    -------------------------------------------------------------------------------
+                                        NAV
+    -------------------------------------------------------------------------------
+*/
+
+#nav /* nav bar layout */
+{
+    /* postion */
+
+    display: block;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 5;
+    overflow: hidden;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+
+    /* style */
+
+    box-shadow: 10px 0 10px;
+    background-color: #010033c2;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+.nav_block /* div block containing the nav contents */
+{
+    /* postion */
+
+    display: block;
+    margin: auto;
+    width: 60%;
+    overflow: auto;
+    text-align: center;
+    align-items: center;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#nav ul /* navigation bar list */
+{
+    /* postion */
+
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    /* width: 30em; */
+    overflow: auto;
+    margin: auto;
+    margin-top: 1em;
+
+    /* style */
+
+    list-style-type: none;    
+    font-family: 'CalibreSemibold';
+    
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+      
+#nav ul li /* navigation bar list items */
+{
+    /* position */
+
+    float: left;
+    margin-top: 0;
+
+    /* style */
+
+    font-variant: small-caps;
+    letter-spacing: 1px;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+      
+li a /* navigation bar list links */
+{
+    /* position */
+
+    display: block;
+    margin: 0 1em;
+    text-align: center;
+
+    /* style */
+
+    color: whitesmoke;   
+    text-decoration: none;
+    font-size: large;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#logo /* navigation bar logo */
+{
+    /* postion */
+
+    float: left;
+    margin: 2px 0 2px 0;
+    padding: 0;
+    max-width: 3em;
+    min-width: 1em; 
+       
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#cv_btn /* navigation bar cv button */
+{
+    /* position */
+
+    float: right;
+    margin: 4px 0 0 0;
+    padding: 0.5em 1.3em;
+    text-align: center;
+    
+    /* style */
+
+    color: whitesmoke;    
+    font-size: large;
+    font-variant: small-caps;
+    font-family: 'CalibreSemibold';
+    border: 3px solid rgb(28, 123, 187);    
+    text-decoration: none;
+    border-radius: 5%;    
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+#cv_btn:hover /* resume button hovering */
+{
+    background-color: rgba(0, 153, 255, 0.144);
+    color: rgb(206, 162, 41);
+}
+ 
