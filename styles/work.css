@@ -43,7 +43,7 @@
 
     /* style */
 
-    background-image: linear-gradient(to left, rgb(0, 9, 90) 65%, rgba(0, 9, 90, 0) 85%), linear-gradient(to bottom, rgb(0, 9, 90) 5%, rgba(0, 9, 90, 0) 15%, rgb(0, 9, 90) 98%);
+    background-image: linear-gradient(to left, rgb(0, 9, 90) 66%, rgba(0, 9, 90, 0) 85%), linear-gradient(to bottom, rgb(0, 9, 90) 5%, rgba(0, 9, 90, 0) 15%, rgb(0, 9, 90) 98%);
     background-position: right, top;
     background-repeat: no-repeat, no-repeat;
 }
@@ -269,18 +269,23 @@ h2.work_column_title /* title for text column */
     -------------------------------------------------------------------------------
 */
 
+/* page image table */ 
 * 
 {
     box-sizing: border-box;
 }
-  
+
 .row > .column 
 {
+    /* position */
+
     padding: 0 8px;
 }
   
 .row:after 
 {
+    /* position */
+    
     content: "";
     display: table;
     clear: both;
@@ -288,13 +293,16 @@ h2.work_column_title /* title for text column */
   
 .column 
 {
+    /* position */
+    
     float: left;
     width: 25%;
-}
-  
-/* The Modal (background) */
-.modal 
+} 
+
+.modal /* The Modal (slideshow) background */
 {
+    /* position */
+    
     display: none;
     position: fixed;
     z-index: 1;
@@ -304,119 +312,167 @@ h2.work_column_title /* title for text column */
     width: 100%;
     height: 100%;
     overflow: auto;
+
+    /* style */
+    
     background-color: black;
 }
-  
-/* Modal Content */
-.modal-content 
+
+.modal-content /* Modal Content */
 {
+    /* position */
+    
     position: relative;
-    background-color: #fefefe00;
     margin: auto;
     padding: 0;
     width: 90%;
     max-width: 1200px;
+    
+    /* style */
+    
+    background-color: #fefefe00;
 }
-  
-/* The Close Button */
+
+/* The Close Button */  
 .close 
 {
-    color: white;
+    /* position */
+    
     position: absolute;
     top: 10px;
     right: 25px;
+
+    /* style */
+    
     font-size: 35px;
     font-weight: bold;
+    color: white;
 }
   
 .close:hover, .close:focus 
 {
+    /* style */
+    
     color: #999;
     text-decoration: none;
     cursor: pointer;
 }
-  
+
 .slides 
 {
+    /* position */
+    
     display: none;
 }
   
 .cursor 
 {
+    /* style */
+    
     cursor: pointer;
 }
   
-/* Next & previous buttons */
-.prev, .next
+
+.prev, .next /* Next & previous buttons */
 {
-    cursor: pointer;
+    /* position */
+    
     position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: white;
+
+    /* style */
+    
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    cursor: pointer;
+    color: white;
 }
   
-/* Position the "next button" to the right */
-.next 
+.next /* Position the "next button" to the right */
 {
+    /* position */
+    
     right: 0;
+
+    /* style */
+    
     border-radius: 3px 0 0 3px;
 }
   
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover 
+.prev:hover, .next:hover /* On hovering previous and next buttons */
 {
+    /* style */
+    
     background-color: rgba(0, 0, 0, 0.8);
 }
   
-/* Number text (1/3 etc) */
-.numbertext 
+.numbertext /* Number text (e.g. 1/3) */
 {
-    color: #f2f2f2;
-    font-size: 12px;
+    /* position */
+
     padding: 8px 12px;
     position: absolute;
     top: 0;
-}
-  
-img 
-{
-    margin-bottom: -4px;
-}
-  
-.caption-container 
-{
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
+
+    /* style */
+    
+    color: #f2f2f2;
+    font-size: 12px;
 }
 
-#caption
+img /* main picture in modal */
 {
+    /* position */
+    
+    margin-bottom: -4px;
+}
+
+.caption-container /* div containing caption */
+{
+    /* position */
+    
+    text-align: center;
+    padding: 2px 16px;
+
+    /* style */
+    
+    color: white;
+    background-color: black;
+}
+
+#caption /* caption */
+{
+    /* position */
+    
     text-align: center;
 }
   
-.demo 
+.demo /* picture list below main picture in modal */
 {
+    /* style */
+    
     opacity: 0.6;
 }
   
-.active, .demo:hover 
+.active, .demo:hover /* hovering over a picture in list below main picture in modal, and selected picture in list */
 {
+    /* style */
+    
     opacity: 1;
 }
 
+/* pictures in list on page hover */
 img.hover-shadow 
 {
+    /* style */
+    
     transition: 0.3s;
     border: 2px solid rgb(0, 4, 39);
     border-radius: 10px;
@@ -424,12 +480,8 @@ img.hover-shadow
   
 .hover-shadow:hover 
 {
+    /* style */
+    
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.411), 0 6px 20px 0 rgba(0, 0, 0, 0.441);
 }
-
-
-
-
-
-
 

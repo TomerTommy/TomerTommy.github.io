@@ -12,7 +12,7 @@
 
         <!-- Webpage title and logo -->
         <title>Tomer Ziv</title>
-        <link rel="icon" type="image/png" href="inputs/logo.png">
+        <link rel="icon" type="image/png" href="data/logo.png">
 
         <!-- CSS -->
         <!-- <link rel="stylesheet" type="text/css" href="styles/skeleton.css"> -->
@@ -28,7 +28,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- JS scripts -->
-        <script src='scripts/work_text.js'></script>
+        <script src='scripts/jquery-3.5.1.js'></script>
+        <script src="scripts/smooth-scroll-master/dist/smooth-scroll.polyfills.min.js"></script>
 
     </head>
     <!-- Header -->
@@ -43,19 +44,19 @@
                 
                 <!-- nav bar links -->
                 <ul>
-                    <li><a href='#title_page'>home</a></li>
-                    <li><a href='#about'>about</a></li>
-                    <li><a href='#education'>education</a></li>
-                    <li><a href='#work'>work</a></li>
-                    <li><a href='#skills'>skills</a></li>
-                    <li><a href='#contact'>contact</a></li>                        
+                    <li class='fade-in'><a data-scroll href='#title_page'>home</a></li>
+                    <li class='fade-in'><a data-scroll href='#about'>about</a></li>
+                    <li class='fade-in'><a data-scroll href='#education'>education</a></li>
+                    <li class='fade-in'><a data-scroll href='#work'>work</a></li>
+                    <li class='fade-in'><a data-scroll href='#skills'>skills</a></li>
+                    <li class='fade-in'><a data-scroll href='#contact'>contact</a></li>                        
                 </ul>
                 
                 <!-- logo -->
-                <a href='#intro_page'><img id='logo' src='data/logo.png'></a>
+                <a href='#intro_page'><img id='logo'  class='fade-in' src='data/logo.png'></a>
 
                 <!-- cv button -->
-                <a href='inputs/cv.pdf' id='cv_btn'>cv</a>
+                <a href='data/cv.pdf' id='cv_btn' class='fade-in'>cv</a>
 
             </div>          
         
@@ -72,15 +73,15 @@
             <div class='title_background_gradient'>
 
                 <!-- wrapper for all content in page -->
-                <div class='title_content_wrapper'>
+                <div class='come-in title_content_wrapper'>
 
                     <!-- text -->
-                    <span class='first_line'>Hi, my name is </span><br/>
-                    <span class='second_line'>Tomer Ziv.</span><br/>
-                    <span class='third_line'>I study Computer Science.</span><br/><br/><br/>
+                    <span class='fadeModule first_line'>Hi, my name is </span><br/>
+                    <span class='fadeModule second_line'>Tomer Ziv.</span><br/>
+                    <span class='fadeModule third_line'>I study Computer Science.</span><br/><br/><br/>
                     
                     <!-- about me button -->
-                    <a href='#about' id='btn'>about me</a>
+                    <a data-scroll href='#about' id='btn' class='fadeModule'>about me</a>
 
                 </div>
 
@@ -104,18 +105,18 @@
                     <!-- about me description -->
                     <div class='about_description'>
                         
-                        <h2>A brief introduction.</h2>
-                        <p>
+                        <h2 class='fadeModule'>A brief introduction.</h2>
+                        <p class='fadeModule'>
                             Born in 2001, I am a British-Israeli computer science student at the 
                             University of Bath, hoping to one day specialize in Cyber Security or 
                             Artificial Intelligence.
                         </p><br/>
-                        <p>
+                        <p class='fadeModule'>
                             Like most computer geeks I enjoy my share of online gaming, I 
                             also have a passion for music, playing musical instruments 
                             including the Piano, Guitar, Saxophone, and Clarinet.
                         </p><br/>
-                        <p>
+                        <p class='fadeModule'>
                             I participate in recreational sports including Basketball and Badminton. 
                             2013 - 2018 I competed professionaly in international Showjumping, 
                             ultimately stopping to continue my studies.
@@ -124,7 +125,7 @@
                     </div>
                     
                     <!-- portrait -->
-                    <a href='#contact'><img src='data/portrait.jpg' class="portrait"></a>
+                    <a href='#contact'><img src='data/portrait.jpg' class="imageFadeModule portrait"></a>                    
 
                 </div>
             
@@ -151,25 +152,30 @@
                         <!-- institutions column -->
                         <div class='education_institutions'>
 
-                            <h2>Institutions I've attended.</h2>
-                            <h5>2020 - 2025 @  <a class='text_link' href='https://www.bath.ac.uk/' target='_blank'>University of Bath</a></h5>
-                            <p>
-                                I am currently enrolled in a 5 year Masters with placement 
-                                year in Computer Science at Bath University.
-                            </p>
-                            <h5>2015 - 2020 @  <a class='text_link' href='https://www.bedales.org.uk/' target='_blank'>Bedales School</a></h5>
-                            <p>
-                                I Attended Bedales High School where I attained 9 IGCSE's and 
-                                3 A-Levels in the subjects: Maths, Further Maths, Physics.
-                            </p>
+                            <h2 class='fadeModule'>Institutions I've attended.</h2>
+                            <div  class='fadeModule'>
+                                <h5>2020 - 2025 @  <a class='text_link' href='https://www.bath.ac.uk/' target='_blank'>University of Bath</a></h5>
+                                <p>
+                                    I am currently enrolled in a 5 year Masters with placement 
+                                    year in Computer Science at Bath University.
+                                </p>
+                            </div>
+                            
+                            <div  class='fadeModule'>
+                                <h5>2015 - 2020 @  <a class='text_link' href='https://www.bedales.org.uk/' target='_blank'>Bedales School</a></h5>
+                                <p>
+                                    I Attended Bedales High School where I attained 9 IGCSE's and 
+                                    3 A-Levels in the subjects: Maths, Further Maths, Physics.
+                                </p>
+                            </div>
 
                         </div>
 
                         <!-- courses column -->
                         <div class='education_courses'>
 
-                            <h2>Courses I've completed.</h2>
-                            <ul>
+                            <h2 class='fadeModule'>Courses I've completed.</h2>
+                            <ul class='fadeModule'>
 
                                 <li>Silver Duke of Edinburgh award.</li>
                                 <li>Summer engineering course at Oxford Royale Academy,<br/>finnishing with the honor award for attainment in Engineering.</li>
@@ -204,13 +210,13 @@
                     <!-- all work text (box container) -->
                     <div class='work_column_wrapper'>
                         
-                        <h2 class='work_column_title'>Some places I've worked.</h2>
+                        <h2 class='fadeModule work_column_title'>Some places I've worked.</h2>
 
                         <!-- work navigation column with buttons -->
                         <div class='work_nav_column'>
                             
-                            <button  id='b3d_button' class='work_button'><span>Beyon3D</span></button>
-                            <button  id='hhe_button' class='work_button'><span>HHE Ltd.</span></button>
+                            <button  id='b3d_button' class='fadeModule work_button'><span>Beyon3D</span></button>
+                            <button  id='hhe_button' class='fadeModule work_button'><span>HHE Ltd.</span></button>
                         
                         </div>
                         
@@ -220,19 +226,19 @@
                             <!-- Beyon3D text -->
                             <div id='work_b3d'>
 
-                                <h5>Jul 2018  @  <a class='text_link' href='https://beyon3d.com/' target='_blank'>Beyon3D</a></h5>
-                                <p>
+                                <h5 class='workFadeModule'>Jul 2018  @  <a class='text_link' href='https://beyon3d.com/' target='_blank'>Beyon3D</a></h5>
+                                <p class='workFadeModule'>
                                     In 2018 I worked for a few weeks as an intern in Beyon3D, 
                                     a high-tech startup company based in hertzelia-pituach, israel. 
                                     I worked alongside professionals with years of engineering experience exposing 
                                     me to many different disciplines within the single workspace.
                                 </p>
-                                <p>
+                                <p class='workFadeModule'>
                                     My job was to fully automate a piece of industrial equipment as well as help with 
                                     the main project of the company giving me experience in the Mechanical, Electrical, 
                                     Computational and Integration sides of R&D.
                                 </p>
-                                <p>
+                                <p class='workFadeModule'>
                                     This has given me a taste of life as an engineer in a high-tech startup, working 
                                     long hours, collaborating on projects between different disciplines, the challenges 
                                     of a professional workspace. This was an incredible experience, encouraging me to 
@@ -244,39 +250,45 @@
                             <!-- Hill House Equine Ltd. text -->
                             <div id='work_hhe'>
 
-                                <h5>Jan 2013 - Jul 2018  @  Hill House Equine Ltd.</h5>
-                                <p>
-                                    Up to and during my IGCSE school years I was a professional showjumper. 
-                                    Starting with some local competitions with 1.00m tall fences, advancing 
-                                    to 1.45m grand prix classes at venues all over Europe.
-                                </p>
-                                <p>
-                                    Doing this prohibited me from having a normal education, so inevitably I
-                                    studied for and completed my IGCSE's independently while touring. I ultimately
-                                    decided to stop in the months approaching my A-Levels to return to school to 
-                                    with a more academic life path.
-                                </p>
+                                <h5 class='fadeModule workFadeModule'>Jan 2013 - Jul 2018  @  Hill House Equine Ltd.</h5>
+                                <div>
 
-                                <h2>Some images of my work.</h2>
+                                    <p class='fadeModule workFadeModule'>
+                                        Up to and during my IGCSE school years I was a professional showjumper. 
+                                        Starting with some local competitions with 1.00m tall fences, advancing 
+                                        to 1.45m grand prix classes at venues all over Europe.
+                                    </p>
+                                    <p class='fadeModule workFadeModule'>
+                                        Doing this prohibited me from having a normal education, so inevitably I
+                                        studied for and completed my IGCSE's independently while touring. I ultimately
+                                        decided to stop in the months approaching my A-Levels to return to school to 
+                                        with a more academic life path.
+                                    </p>
+
+                                </div>
+
+                                <!-- image lightbox -->
+                                <!-- picture list in page -->
+                                <h2 class='fadeModule workFadeModule'>Some images of my work.</h2>
 
                                 <div class="row">
 
-                                    <div class="column">
+                                    <div class="imageFadeModule column">
 
                                         <img src="data/hhe_work/1040-351_7765.JPG" style="width:100%" onclick="openModal(); currentSlide(1)" class="hover-shadow cursor">
 
                                     </div>
-                                    <div class="column">
+                                    <div class="imageFadeModule column">
 
                                         <img src="data/hhe_work/1040-351_7773.JPG" style="width:100%" onclick="openModal(); currentSlide(2)" class="hover-shadow cursor">
 
                                     </div>
-                                    <div class="column">
+                                    <div class="imageFadeModule column">
 
                                         <img src="data/hhe_work//1055-333_8901.JPG" style="width:100%" onclick="openModal(); currentSlide(3)" class="hover-shadow cursor">
 
                                     </div>
-                                    <div class="column">
+                                    <div class="imageFadeModule column">
 
                                         <img src="data/hhe_work/WhatsApp Image 2018-04-22 at 15.42.49.jpeg" style="width:100%" onclick="openModal(); currentSlide(4)" class="hover-shadow cursor">
 
@@ -284,6 +296,7 @@
 
                                 </div>
 
+                                <!-- picture slideshow in 'modal' -->
                                 <div id="myModal" class="modal">
 
                                     <span class="close cursor" onclick="closeModal()">&times;</span>
@@ -315,15 +328,18 @@
 
                                         </div>
 
+                                        <!-- arrow buttons functionality -->
                                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+                                        <!-- captions -->
                                         <div class="caption-container">
 
                                             <p id="caption"></p>
 
                                         </div>
 
+                                        <!-- picture list under main picture in slideshow in 'modal' -->
                                         <div class="column">
                                             
                                             <img class="demo cursor" src="data/hhe_work/1040-351_7765.JPG" style="width:100%" onclick="currentSlide(1)" alt="Global Champions Tour, Paris, Jul 2018: Chaska II.">
@@ -374,69 +390,69 @@
                 <!-- wrapper for all page content -->
                 <div class='skills_content_wrapper'>
 
-                    <h2>Some skills I've aquired.</h2>
+                    <h2 class='fadeModule'>Some skills I've aquired.</h2>
 
                     <!-- programming languages section -->
-                    <div class='skills_programming_languages_wrapper'>
+                    <div class='fadeModule skills_programming_languages_wrapper'>
                         
                         <h5>Programming languages I know.</h5>
 
                         <ul id="skill_list">
 
-                            <li><span class="skills_expand csharp"></span><em>C#</em></li>
-                            <li><span class="skills_expand java"></span><em>Java</em></li>
-                            <li><span class="skills_expand css"></span><em>CSS</em></li>
-                            <li><span class="skills_expand html"></span><em>HTML</em></li>                                
-                            <li><span class="skills_expand javaScript"></span><em>JavaScript</em></li>
-                            <li><span class="skills_expand python"></span><em>Python</em></li>
-                            <li><span class="skills_expand cpp"></span><em>C++</em></li>
+                            <li><span class="skills_expand" style='width: 80%;'></span><em>C#</em></li>
+                            <li><span class="skills_expand" style='width: 75%;'></span><em>Java</em></li>
+                            <li><span class="skills_expand"  style='width: 70%;'></span><em>CSS</em></li>
+                            <li><span class="skills_expand"  style='width: 65%;'></span><em>HTML</em></li>                                
+                            <li><span class="skills_expand" style='width: 65%;'></span><em>JavaScript</em></li>
+                            <li><span class="skills_expand"  style='width: 40%;'></span><em>Python</em></li>
+                            <li><span class="skills_expand"  style='width: 30%;'></span><em>C++</em></li>
 
                         </ul>
 
                     </div>
 
                     <!-- tools section -->
-                    <div class='skills_tools_wrapper'>
+                    <div class='fadeModule skills_tools_wrapper'>
 
                         <h5>Tools I've used.</h5>
 
                         <ul id="skill_list">
 
-                            <li><span class="skills_expand vs_code"></span><em>VS_Code</em></li>
-                            <li><span class="skills_expand VS"></span><em>Visual Studio</em></li>
-                            <li><span class="skills_expand intellij"></span><em>JetBrains Intellij</em></li>
-                            <li><span class="skills_expand arduino"></span><em>Arduino</em></li>
-                            <li><span class="skills_expand solidworks"></span><em>SolidWorks</em></li>
+                            <li><span class="skills_expand" style='width: 80%;'></span><em>VS_Code</em></li>
+                            <li><span class="skills_expand" style='width: 75%;'></span><em>Visual Studio</em></li>
+                            <li><span class="skills_expand" style='width: 70%;'></span><em>JetBrains Intellij</em></li>
+                            <li><span class="skills_expand" style='width: 70%;'></span><em>Arduino</em></li>
+                            <li><span class="skills_expand" style='width: 50%;'></span><em>SolidWorks</em></li>
 
                         </ul>                        
 
                     </div>
 
                     <!-- spoken languages section -->                    
-                    <div class='skills_languages_wrapper'>
+                    <div class='fadeModule skills_languages_wrapper'>
 
                         <h5>Languages I speak.</h5>
 
                         <ul id="skill_list">
                             
-                            <li><span class="skills_expand english"></span><em>English</em></li>
-                            <li><span class="skills_expand hebrew"></span><em>Hebrew</em></li>                            
-                            <li><span class="skills_expand spanish"></span><em>Spanish</em></li>
+                            <li><span class="skills_expand" style='width: 95%;'></span><em>English</em></li>
+                            <li><span class="skills_expand" style='width: 90%;'></span><em>Hebrew</em></li>                            
+                            <li><span class="skills_expand" style='width: 50%;'></span><em>Spanish</em></li>
 
                         </ul>
 
                     </div>                 
                     
                     <!-- platforms section-->
-                    <div class='skills_platforms_wrapper'>
+                    <div class='fadeModule skills_platforms_wrapper'>
 
                         <h5>Platforms I've worked on.</h5>
 
                         <ul id="skill_list">
                             
-                            <li><span class="skills_expand windows"></span><em>Windows</em></li>
-                            <li><span class="skills_expand linux"></span><em>Linux Debian</em></li>                            
-                            <li><span class="skills_expand osx"></span><em>OSX</em></li>
+                            <li><span class="skills_expand" style='width: 85%;'></span><em>Windows</em></li>
+                            <li><span class="skills_expand" style='width: 75%;'></span><em>Linux Debian</em></li>                            
+                            <li><span class="skills_expand" style='width: 55%;'></span><em>OSX</em></li>
 
                         </ul>
 
@@ -452,12 +468,15 @@
         <!-- contact page -->
         <div id='contact'>
 
+            <!-- horizontal line starting the contact section -->
             <hr class='gradient_style'>
 
-            <div class='contact_content_wrapper'>
+            <div class='fadeModule contact_content_wrapper'>
 
+                <!-- contact page title -->
                 <h2 class='contact_title'>Get in touch.</h2>
 
+                <!-- all information in page -->
                 <div class='contact_info'>
 
                     <p class='contact_text'>
@@ -465,10 +484,11 @@
                         websites. I'm always happy to build new bridges.
                     </p>
 
-                    <a href="mailto:tziv.org@gmail.com" target="_blank"><img class='contact_icon' src='data/icons/email.png'></a>
-                    <a href="https://github.com/TomerTommy" target="_blank"><img class='contact_icon' src='data/icons/github.png'></a>
-                    <a href="https://www.instagram.com/tomerziv3/" target="_blank"><img class='contact_icon' src='data/icons/instagram.png'></a>
-                    <a href="https://www.youtube.com/user/tomtomziv" target="_blank"><img class='contact_icon' src='data/icons/youtube.png'></a>
+                    <!-- all icons in page -->
+                    <a href="mailto:tziv.org@gmail.com" target="_blank"><img class='imageFadeModule contact_icon' src='data/icons/email.png'></a>
+                    <a href="https://github.com/TomerTommy" target="_blank"><img class='imageFadeModule contact_icon' src='data/icons/github.png'></a>
+                    <a href="https://www.instagram.com/tomerziv3/" target="_blank"><img class='imageFadeModule contact_icon' src='data/icons/instagram.png'></a>
+                    <a href="https://www.youtube.com/user/tomtomziv" target="_blank"><img class='imageFadeModule contact_icon' src='data/icons/youtube.png'></a>
 
                     <p class='contact_text'><a class='contact_text_link' href='https://github.com/TomerTommy/TomerTommy.github.io' target="_blank">Designed and built by Tomer Ziv</a></p>
 
@@ -484,6 +504,16 @@
         <script src='scripts/work_text.js'></script>
         <script src='scripts/navbar_hide.js'></script>
         <script src='scripts/work_image_lightbox.js'></script>
+        <script src='scripts/delay_content_visibility.js'></script>
+        <script src='scripts/delay_progress_bar_animation.js'></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {	
+
+                speed: 5000,
+                speedAsDuration: true,             
+                easing: 'easeInOutQuad'
+            });
+        </script>
 
     </body>
     <!-- Main body -->

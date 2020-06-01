@@ -34,7 +34,7 @@
     display: block;
     margin: auto;
     width: 60%;
-    overflow: auto;
+    overflow: hidden;
     text-align: center;
     align-items: center;
 
@@ -50,7 +50,7 @@
     position: relative;
     padding: 0;
     /* width: 30em; */
-    overflow: auto;
+    overflow: hidden;
     margin: auto;
     margin-top: 1em;
 
