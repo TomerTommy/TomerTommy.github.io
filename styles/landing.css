@@ -24,6 +24,7 @@
                                         MAIN
     -------------------------------------------------------------------------------
 */
+
 html /* webpage */
 {
     /* position */
@@ -124,7 +125,7 @@ h5 /* all quinary headers */
     color: whitesmoke;
     text-align: center;
     font-size: larger;
-    border: 3px solid rgb(28, 123, 187);
+    border: 0.2vh solid rgb(28, 123, 187);
     border-radius: 5%;    
     font-variant: small-caps;
     letter-spacing: 1px;
@@ -365,4 +366,15 @@ hr.gradient_style /* Horizontal line gradient style */
 .nav_block .fade-in:nth-child(6)
 {
     animation-duration: 2.5s;
+}
+
+@media screen and (max-width: 1400px)
+{
+    .title_content_wrapper, .about_content_wrapper, .education_content_wrapper, .work_content_wrapper, .skills_content_wrapper
+    /* .title_background_gradient, .about_background_gradient, .education_background_gradient, .work_background_gradient, .skills_background_gradient */
+    {height: auto; width: 100%; align-items: center; margin-bottom: 40vh;}
+
+    #title_page, #about, #education, #work, #skills {height: auto;}
+    .title_background_img, .about_background_img, .education_background_img, .work_background_img, .skills_background_img {display: none}
+
 }

@@ -18,3 +18,15 @@ window.onscroll = function()
 
   prevScrollpos = currentScrollPos;
 }
+
+/* open and close curtain navbar menu on mobile */
+
+function openNav() {
+
+  document.getElementById("curtain_nav").style.height = "100vh";
+}
+
+function closeNav() {
+
+  document.getElementById("curtain_nav").style.height = "0%";
+}

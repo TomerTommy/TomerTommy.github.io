@@ -14,7 +14,7 @@
     margin: 0;
     top: 0;
     width: 100vw;
-    z-index: 5;
+    z-index: 4;
     overflow: hidden;
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
 
@@ -127,7 +127,7 @@ li a /* navigation bar list links */
     font-size: large;
     font-variant: small-caps;
     font-family: 'CalibreSemibold';
-    border: 3px solid rgb(28, 123, 187);    
+    border: 0.2vh solid rgb(28, 123, 187);    
     text-decoration: none;
     border-radius: 5%;    
     font-variant: small-caps;
@@ -139,4 +139,102 @@ li a /* navigation bar list links */
     background-color: rgba(0, 153, 255, 0.144);
     color: rgb(206, 162, 41);
 }
- 
+
+/* curtain nav menu for mobile */
+
+.overlay 
+{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content 
+{
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a
+{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 2.2vh;
+    font-family: 'CalibreSemibold';
+    font-variant: small-caps;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus 
+{
+    color: rgb(206, 162, 41);
+}
+  
+.overlay .closebtn 
+{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.curtain_nav_button
+{
+    display: none;
+    float: right;
+    margin: 0 5% 0 0;
+
+    color: whitesmoke;    
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.curtain_nav_button:hover
+{
+    color: rgb(206, 162, 41);
+}
+
+/* media queries for different viewport sizes */
+
+@media screen and (max-width: 1240px)
+{
+    .nav_block{width: 100%;}
+    #logo{margin-left: 20px;}
+    #cv_btn{margin-right: 20px}
+}
+
+@media screen and (max-width: 1300px)
+{
+    .nav_block ul, .nav_block ul li, .nav_block #cv_btn {display: none;}
+    .curtain_nav_button {display: inline-block;}
+}
+
+
+@media screen and (min-width: 1920)
+{
+    .nav_block ul, .nav_block ul li, .nav_block #cv_btn { font-size: 1.8vh}
+    
+}
+
+@media screen and (max-height: 450px) 
+{
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+}
