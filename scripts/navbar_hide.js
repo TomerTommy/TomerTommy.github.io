@@ -5,18 +5,21 @@ var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() 
 {
-  var currentScrollPos = window.pageYOffset;
-
-  if (prevScrollpos > currentScrollPos) 
+  if(window.pageYOffset >= 200)
   {
-    document.getElementById("nav").style.top = "0";
-  }
-  else 
-  {
-    document.getElementById("nav").style.top = "-150px";
-  }
+    var currentScrollPos = window.pageYOffset;
 
-  prevScrollpos = currentScrollPos;
+    if (prevScrollpos > currentScrollPos)
+    {
+      document.getElementById("nav").style.top = "0";
+    }
+    else 
+    {
+      document.getElementById("nav").style.top = "-150px";
+    }
+
+    prevScrollpos = currentScrollPos;
+  }
 }
 
 /* open and close curtain navbar menu on mobile */
