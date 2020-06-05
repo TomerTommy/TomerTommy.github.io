@@ -112,8 +112,8 @@ a.contact_text_link:hover /* hovering over any hyperlink in text */
 
 @media screen and (max-width: 1240px)
 {
-    .contact_info {margin: 50px auto;}
+    .contact_info {margin: 50px auto 10px auto;}
     .contact_text {display: none;}
-    .contact_icon {width: 60px; margin: 0 10px;}
-    .contact_title {padding: 20px 0 0 0;}
+    .contact_icon {width: 80px; margin: 0 10px;}
+    .contact_title {padding: 40px 0 20px 0;}
 }
