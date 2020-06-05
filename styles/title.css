@@ -97,9 +97,9 @@
 
 @media screen and (max-width: 1240px)
 {
-    .title_content_wrapper {padding: 18% auto;}
-    .first_line {font-size: 10vh;}
-    .second_line {font-size: 40vh;}
-    .third_line {font-size: 30vh;}
+    .title_content_wrapper {padding: 100px 0 100px 10px;}
+    .first_line {font-size: 40px;}
+    .second_line {font-size: 120px;}
+    .third_line {font-size: 80px;}
     .title_content_wrapper a {display: none;}
 }

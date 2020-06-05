@@ -60,7 +60,7 @@
 
     display: block;
     position: relative;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     padding-bottom: 2px;
     text-align: center;
 
@@ -112,7 +112,8 @@ a.contact_text_link:hover /* hovering over any hyperlink in text */
 
 @media screen and (max-width: 1240px)
 {
-    .contact_info {margin: 100px auto;}
+    .contact_info {margin: 50px auto;}
     .contact_text {display: none;}
-    .contact_icon {width: 110px;}
+    .contact_icon {width: 60px; margin: 0 10px;}
+    .contact_title {padding: 20px 0 0 0;}
 }

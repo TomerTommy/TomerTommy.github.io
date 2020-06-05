@@ -118,7 +118,7 @@
 
 @media screen and (max-width: 1240px)
 {
-    .about_content_wrapper {padding: 50px 10px 0 10px;}
+    .about_content_wrapper {padding: 50px 10px;}
     .about_description {display: block; width: 100%; padding: 0 20px 0 20px; margin: 0; height: auto;}
     .portrait {display: block; width: 60%; margin: 10% auto;}
 }

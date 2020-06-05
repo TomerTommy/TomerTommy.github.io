@@ -116,10 +116,10 @@ h5 /* all quinary headers */
 @media screen and (max-width: 1240px)
 {
 
-    h2 {font-size: 20vh;}
-    h5 {font-size: 15vh;}
-    p {font-size: 10vh;}
-    li {font-size: 10vh;}
+    h2 {font-size: 60px;}
+    h5 {font-size: 30px;}
+    p {font-size: 25px;}
+    li {font-size: 25px;}
 }
 
 #btn /* all buttons */

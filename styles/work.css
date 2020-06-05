@@ -482,7 +482,7 @@ img.hover-shadow
 
 @media screen and (max-width: 1240px)
 {
-    .work_content_wrapper {padding: 5% 10px; width: 100%;}
+    .work_content_wrapper {padding: 50px 10px; width: 100%;}
     .work_column_wrapper {width: 100%; margin: 5% auto;}
     .work_nav_column {display: none;}
     #work_b3d, #work_hhe {display: block; width: 100%; margin: 10% auto; height: auto;}

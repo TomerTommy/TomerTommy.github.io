@@ -119,7 +119,7 @@
 
 @media screen and (max-width: 1400px) 
 {
-    .education_content_wrapper {padding: 50px 10px 0 10px;}
+    .education_content_wrapper {padding: 50px 10px;}
     .education_institutions, .education_courses {display: block; width: 70%; margin: 5% auto; margin-bottom: 10%;}
 }
 
