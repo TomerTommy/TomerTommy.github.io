@@ -480,7 +480,13 @@ img.hover-shadow
     .work_column_wrapper {margin: 5% auto;}
 }
 
-@media screen and (max-width: 1240px)
+@media screen and (max-width: 950px)
+{
+    .work_content_wrapper {padding: 5% 10px;}
+    .work_column_wrapper {width: 100%;}
+}
+
+@media screen and (max-width: 480px)
 {
     .work_content_wrapper {padding: 5% 10px; width: 100%;}
     .work_column_wrapper {width: 100%; margin: 5% auto;}

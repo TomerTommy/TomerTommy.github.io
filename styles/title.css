@@ -95,11 +95,7 @@
     /* border: 4px solid rgb(255, 255, 0); */
 }
 
-@media screen and (max-width: 1240px)
+@media screen and (max-width: 1400px)
 {
     .title_content_wrapper {padding: 18% auto;}
-    .first_line {font-size: 10vh;}
-    .second_line {font-size: 40vh;}
-    .third_line {font-size: 30vh;}
-    .title_content_wrapper a {display: none;}
 }

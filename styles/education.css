@@ -123,8 +123,7 @@
     .education_institutions, .education_courses {display: block; width: 70%; margin: 5% auto; margin-bottom: 10%;}
 }
 
-@media screen and (max-width: 1240px) 
+@media screen and (max-width: 950px) 
 {
     .education_institutions, .education_courses {display: block; width: 100%; margin: 5% auto; margin-bottom: 10%;}
-    .education_courses ul li {line-height: 150%;}
 }
