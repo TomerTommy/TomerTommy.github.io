@@ -147,7 +147,7 @@ li a /* navigation bar list links */
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 0;
     left: 0;
     background-color: rgb(0,0,0);
@@ -185,9 +185,9 @@ li a /* navigation bar list links */
 .overlay .closebtn 
 {
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 45px;
-    font-size: 60px;
+    font-size: 30vh;
 }
 
 .curtain_nav_button
@@ -197,7 +197,7 @@ li a /* navigation bar list links */
     margin: 0 5% 0 0;
 
     color: whitesmoke;    
-    font-size: 2.5em;
+    font-size: 40px;
     cursor: pointer;
 }
 
@@ -211,8 +211,16 @@ li a /* navigation bar list links */
 @media screen and (max-width: 1240px)
 {
     .nav_block{width: 100%;}
-    #logo{margin-left: 20px;}
+    #logo{margin-left: 20px; font-size: 15vh;}
     #cv_btn{margin-right: 20px}
+    .overlay {overflow-y: auto; font-size: 20vh;}
+    .overlay a {font-size: 20vh;}
+    .overlay .closebtn {
+    font-size: 20vh;
+    top: 15px;
+    right: 35px;
+    }
+    .curtain_nav_button {font-size: 20vh;}
 }
 
 @media screen and (max-width: 1300px)
@@ -228,13 +236,3 @@ li a /* navigation bar list links */
     
 }
 
-@media screen and (max-height: 450px) 
-{
-    .overlay {overflow-y: auto;}
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-}

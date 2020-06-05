@@ -13,7 +13,7 @@ window.onscroll = function()
   }
   else 
   {
-    document.getElementById("nav").style.top = "-60px";
+    document.getElementById("nav").style.top = "-150px";
   }
 
   prevScrollpos = currentScrollPos;

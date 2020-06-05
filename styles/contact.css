@@ -109,3 +109,10 @@ a.contact_text_link:hover /* hovering over any hyperlink in text */
 
     color: rgb(206, 162, 41);
 }
+
+@media screen and (max-width: 1240px)
+{
+    .contact_info {margin: 100px auto;}
+    .contact_text {display: none;}
+    .contact_icon {width: 110px;}
+}
