@@ -106,7 +106,8 @@ li a /* navigation bar list links */
     margin: 2px 0 2px 0;
     padding: 0;
     max-width: 3em;
-    min-width: 1em; 
+    min-width: 1em;
+    cursor: pointer;
        
     /* DEBUG VARIABLES */
     /* border: 4px solid rgb(255, 255, 0); */

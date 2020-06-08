@@ -15,6 +15,7 @@
     align-items: center;
     overflow-x: hidden;
     overflow-y: auto;
+    -ms-overflow-style: none;
 
     /* style */
 
@@ -22,6 +23,10 @@
     
     /* DEBUG VARIABLES */
     /* border: 4px solid rgb(255, 255, 0); */
+}
+
+#contact::-webkit-scrollbar{
+    display: none;
 }
 
 .contact_content_wrapper /* div containing all content in contact page */

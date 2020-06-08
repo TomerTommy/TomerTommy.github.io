@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+/* added fonts */
+
+@font-face
+{
+    font-family: FabyenDemo;
+    src: url("fonts/FabyenDemo.ttf");
+}
+@font-face
+{
+    font-family: CalibreSemibold;
+    src: url("fonts/CalibreSemibold.otf");
+}
+@font-face
+{
+    font-family: seag;
+    src: url("fonts/seag.ttf");
+}
+
+/*  
+    -------------------------------------------------------------------------------
+                                        MAIN
+    -------------------------------------------------------------------------------
+*/
+
+html /* webpage */
+{
+    /* position */
+
+    overflow-x: hidden;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(51, 255, 0); */
+}
+
+body /* webpage visible container */
+{
+    /* position */
+
+    display: block;
+    margin: 0;
+    -ms-overflow-style: none;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+p /* all paragraphs */
+{
+    /* style */
+
+    color: whitesmoke;
+    font-size: large;
+    font-family: 'FabyenDemo';
+    text-align: justify;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+h1 /* all primary headers */
+{
+    /* position */
+
+    display: inline-block;
+
+    /* style */
+
+    font-family: 'Georgia';
+    font-size: 5em;
+    color: rgb(187, 228, 255);
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+h2 /* all secondary headers */
+{
+    /* style */
+
+    font-family: 'Georgia';
+    font-size: 2.5em;
+    color: rgb(187, 228, 255);
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+h3 /* all tertiary headers */
+{
+    /* style */
+
+    font-family: 'FabyenDemo';
+    font-size: 2em;
+    color: whitesmoke;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+h5 /* all quinary headers */
+{
+    /* style */
+
+    font-family: 'FabyenDemo';
+    font-size: larger;
+    color: whitesmoke;
+
+    /* DEBUG VARIABLES */
+    /* border: 4px solid rgb(255, 255, 0); */
+}
+
+@media screen and (max-width: 1240px)
+{
+
+    h2 {font-size: 60px;}
+    h5 {font-size: 30px;}
+    p {font-size: 25px;}
+    li {font-size: 25px;}
+}
+
+#main {
+
+    opacity: 0;
+    animation: land_to_main_main 2s ease forwards 10s;
+}
+
+#btn /* all buttons */
+{
+    /* position */
+
+    padding: 1em 2em;
+    margin-top: 10%;
+
+    /* style */
+
+    color: whitesmoke;
+    text-align: center;
+    font-size: larger;
+    border: 0.2vh solid rgb(28, 123, 187);
+    border-radius: 5%;    
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: 'CalibreSemibold';
+}
+
+#btn:hover /* all buttons hover action */
+{
+    /* style */
+
+    background-color: rgba(0, 153, 255, 0.144);
+    color: rgb(206, 162, 41);
+}
+
+a:hover /* link hovering */
+{
+    color: rgb(206, 162, 41);
+}
+
+
+a.text_link /* any hyperlink in text */
+{
+    /* style */
+
+    font-style: italic;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a.text_link:hover /* hovering over any hyperlink in text */
+{
+    /* style */
+
+    color: rgb(206, 162, 41);
+}
+
+.column_subtitles /* column headers */
+{
+    /* position */
+
+    text-align: center;
+}
+
+hr.gradient_style /* Horizontal line gradient style */
+{
+    /* position */
+
+    height: 1px;
+    margin-top: -0.5px;
+
+    /* style */
+
+    border: 0;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #333, #ccc, #333);
+    background-image: -moz-linear-gradient(left, #333, #ccc, #333);
+    background-image: -o-linear-gradient(left, #333, #ccc, #333);
+    background-image: linear-gradient(left, #333, #ccc, #333);
+}
+
+/* Slide-in from down transition for divs */
+.come-in 
+{
+    opacity: 0;
+    transform: translateY(150px);
+    animation: come-in 1s ease forwards;
+}
+
+.already-visible 
+{
+    transform: translateY(0);
+    animation: none;
+    opacity: 1;
+}
+
+@keyframes come-in 
+{
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.work_column .come-in:nth-child(2)
+{
+    animation-duration: 1.5s;
+}
+
+.work_column .come-in:nth-child(3)
+{
+    animation-duration: 2s;
+}
+
+.work_column .come-in:nth-child(4)
+{
+    animation-duration: 2.5s;
+}
+
+/* Slide-in from side transition for divs */
+.come-in-side
+{
+    opacity: 0;
+    transform: translateX(-150px);
+    animation: come-in-side 2.5s ease forwards;
+}
+
+.come-in-side:nth-child(2)
+{
+    animation-duration: 2s;
+}
+
+.come-in-side:nth-child(3)
+{
+    animation-duration: 1.5s;
+}
+
+.come-in-side:nth-child(4)
+{
+    animation-duration: 1s;
+}
+
+.already-visible-image
+{
+    transform: translateX(0);
+    animation: none;
+    opacity: 1;
+}
+
+@keyframes come-in-side
+{
+    to {  opacity: 1; transform: translateX(0); }
+}
+
+
+
+/* fade-in transition for divs */
+.fade-in
+{
+    opacity: 0;
+    transform: scale(0.1);
+    animation: fade-in 1s ease forwards;
+    overflow: hidden;
+}
+
+.nav_block ul .fade-in
+{
+    opacity: 0;
+    transform: scale(2) translateY(-25px);
+    animation: fade-in 1s ease forwards;
+    overflow: hidden;
+}
+
+@keyframes fade-in 
+{
+    to {transform: scale(1.0) translateY(0); opacity: 1; }
+}
+
+.nav_block .fade-in:nth-child(2)
+{
+    animation-duration: 1.3s;
+}
+.nav_block .fade-in:nth-child(3)
+{
+    animation-duration: 1.6s;
+}
+.nav_block .fade-in:nth-child(4)
+{
+    animation-duration: 1.9s;
+}
+.nav_block .fade-in:nth-child(5)
+{
+    animation-duration: 2.2s;
+}
+.nav_block .fade-in:nth-child(6)
+{
+    animation-duration: 2.5s;
+}
+
+@media screen and (max-width: 1400px)
+{
+    .title_content_wrapper, .about_content_wrapper, .education_content_wrapper, .work_content_wrapper, .skills_content_wrapper, .contact_content_wrapper,
+    .title_background_gradient, .about_background_gradient, .education_background_gradient, .work_background_gradient, .skills_background_gradient
+    {height: auto; width: 100%; align-items: center;}
+
+    #title_page, #about, #education, #work, #skills, #contact {height: auto;}
+    .title_background_img, .about_background_img, .education_background_img, .work_background_img, .skills_background_img {display: none}
+
+}
+
+@keyframes land_to_main_main {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes land_to_main_land {
+    to {
+        opacity: 0;
+    }
+}
