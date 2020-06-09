@@ -117,6 +117,7 @@
     line-height: 25px;
 }
 
+/* media queries for different viewport sizes */
 @media screen and (max-width: 1400px) 
 {
     .education_content_wrapper {padding: 50px 10px;}

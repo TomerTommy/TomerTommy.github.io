@@ -115,6 +115,7 @@ a.contact_text_link:hover /* hovering over any hyperlink in text */
     color: rgb(206, 162, 41);
 }
 
+/* media queries for different viewport sizes */
 @media screen and (max-width: 1240px)
 {
     .contact_info {margin: 50px auto 10px auto;}

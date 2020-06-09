@@ -1,5 +1,3 @@
-
-
 $(function() {
     
     var $meters = $("#skill_list > li > span");
@@ -8,6 +6,7 @@ $(function() {
     
     var i = 100;
 
+    // Function to load bars
     function loadDaBars() {
         $("#skill_list > li > span").each(function() {
             $(this)
@@ -21,6 +20,7 @@ $(function() {
         });
     }
 
+    // Function to wait to load until scroll
     $(document).bind('scroll', function(ev) {
         var scrollOffset = $(document).scrollTop();
         var containerOffset = $section.offset().top - window.innerHeight;

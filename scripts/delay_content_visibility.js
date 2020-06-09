@@ -1,5 +1,3 @@
-
-
 (function($) {
 
     $.fn.visible = function(partial) {
@@ -31,17 +29,12 @@ allMods.each(function(i, el)
     } 
 });
 
-var i = 0;
-
+// Come in when visible on scroll
 win.scroll(function(event) 
 {    
     allMods.each(function(i, el) {
 
         var el = $(el);
-        if(el.is("#hhe_button") && i == 0) {
-            el.focus();
-            i++;
-        }
         if (el.visible(true)) {
             el.addClass("come-in"); 
         }
@@ -61,12 +54,12 @@ allMods1.each(function(i, el)
     } 
 });
 
+// For coming in from side or for contact icons fade in
 win1.scroll(function(event) 
 {    
     allMods1.each(function(i, el) {
 
         var el = $(el);
-
         if (el.visible(true)) {
 
             if(el.hasClass("contact_icon")) {

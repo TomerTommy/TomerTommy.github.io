@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
 
 /* added fonts */
-
 @font-face
 {
     font-family: FabyenDemo;
@@ -12,6 +11,11 @@
 {
     font-family: CalibreSemibold;
     src: url("fonts/CalibreSemibold.otf");
+}
+@font-face
+{
+    font-family: CalibreThin;
+    src: url("fonts/CalibreThin.otf");
 }
 @font-face
 {
@@ -118,16 +122,9 @@ h5 /* all quinary headers */
     /* border: 4px solid rgb(255, 255, 0); */
 }
 
-@media screen and (max-width: 1240px)
+#main /* main page */
 {
-
-    h2 {font-size: 60px;}
-    h5 {font-size: 30px;}
-    p {font-size: 25px;}
-    li {font-size: 25px;}
-}
-
-#main {
+    /* style */
 
     opacity: 0;
     animation: land_to_main_main 2s ease forwards 10s;
@@ -207,7 +204,7 @@ hr.gradient_style /* Horizontal line gradient style */
     background-image: linear-gradient(left, #333, #ccc, #333);
 }
 
-/* Slide-in from down transition for divs */
+/* Slide in from down transition for divs */
 .come-in 
 {
     opacity: 0;
@@ -227,6 +224,7 @@ hr.gradient_style /* Horizontal line gradient style */
     to { transform: translateY(0); opacity: 1; }
 }
 
+/* slide in from bottom transition for work column items */
 .work_column .come-in:nth-child(2)
 {
     animation-duration: 1.5s;
@@ -242,7 +240,7 @@ hr.gradient_style /* Horizontal line gradient style */
     animation-duration: 2.5s;
 }
 
-/* Slide-in from side transition for divs */
+/* Slide in from side transition for divs */
 .come-in-side
 {
     opacity: 0;
@@ -301,6 +299,7 @@ hr.gradient_style /* Horizontal line gradient style */
     to {transform: scale(1.0) translateY(0); opacity: 1; }
 }
 
+/* fade in transition for navigation bar items */
 .nav_block .fade-in:nth-child(2)
 {
     animation-duration: 1.3s;
@@ -322,6 +321,7 @@ hr.gradient_style /* Horizontal line gradient style */
     animation-duration: 2.5s;
 }
 
+/* media queries for different viewport sizes */
 @media screen and (max-width: 1400px)
 {
     .title_content_wrapper, .about_content_wrapper, .education_content_wrapper, .work_content_wrapper, .skills_content_wrapper, .contact_content_wrapper,
@@ -333,13 +333,23 @@ hr.gradient_style /* Horizontal line gradient style */
 
 }
 
-@keyframes land_to_main_main {
+@media screen and (max-width: 1240px)
+{
+
+    h2 {font-size: 60px;}
+    h5 {font-size: 30px;}
+    p {font-size: 25px;}
+    li {font-size: 25px;}
+}
+
+/* transition from landing to main page */
+@keyframes land_to_main_main { /* transition for main page */
     to {
         opacity: 1;
     }
 }
 
-@keyframes land_to_main_land {
+@keyframes land_to_main_land { /* transition for landing page */
     to {
         opacity: 0;
     }

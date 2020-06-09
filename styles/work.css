@@ -457,8 +457,7 @@ img /* main picture in modal */
     opacity: 1;
 }
 
-/* pictures in list on page hover */
-img.hover-shadow 
+img.hover-shadow /* pictures in list on page */
 {
     /* style */
     
@@ -467,13 +466,14 @@ img.hover-shadow
     border-radius: 10px;
 }
   
-.hover-shadow:hover 
+.hover-shadow:hover /* pictures in list on page hover */
 {
     /* style */
     
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.411), 0 6px 20px 0 rgba(0, 0, 0, 0.441);
 }
 
+/* media queries for different viewport sizes */
 @media screen and (max-width: 1400px)
 {
     .work_content_wrapper {padding: 5% 0;}

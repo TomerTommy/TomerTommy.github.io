@@ -195,6 +195,7 @@
     background: rgb(206, 162, 41);
 }
 
+/* media queries for different viewport sizes */
 @media screen and (max-width: 1400px)
 {
     .skills_programming_languages_wrapper, .skills_tools_wrapper, .skills_languages_wrapper, .skills_platforms_wrapper

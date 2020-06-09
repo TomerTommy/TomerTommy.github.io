@@ -1,10 +1,12 @@
 
+// Open slideshow
 function openModal() 
 {
     document.getElementById("myModal").style.display = "block";
     document.getElementById("nav").style.display = "none";
 }
-  
+ 
+// Close slideshow
 function closeModal() 
 {
     document.getElementById("myModal").style.display = "none";
@@ -13,7 +15,8 @@ function closeModal()
   
 var slideIndex = 1;
 showSlides(slideIndex);
-  
+
+// Recording slide index
 function plusSlides(n) 
 {
     showSlides(slideIndex += n);

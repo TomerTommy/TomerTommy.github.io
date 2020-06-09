@@ -1,18 +1,24 @@
+#landing_page /* landing page */
+{
+    /* position */
 
-#landing_page {
-
-    position: fixed;
-    opacity: 1;
+    position: fixed;  
     height: 100vh;
     width: 100%;
+    overflow: hidden;
+
+    /* style */
+
+    opacity: 1;
     background-image: url("resized_landing_background.JPG");
     background-repeat: none;
-    background-size: cover;
-    overflow: hidden;
+    background-size: cover;   
     animation: land_to_main_land 2s ease forwards 10s;
 }
 
-#landing {
+#landing /* svg landing animation */
+{
+    /* position */
 
     height: 150%;
     width: 150%;
@@ -22,86 +28,82 @@
     transform: translate(-50%, -50%);
 }
 
-#TT path:nth-child(1){
 
+#TT path:nth-child(1) /* logo thick outline */
+{
     stroke-dasharray: 77.633;
     stroke-dashoffset: 77.633;
     animation: landing_anim 3s ease forwards 4.5s;
 
 }
 
-#TTthin path:nth-child(1){
-
+#TTthin path:nth-child(1) /* logo thin outline */
+{
     stroke-dasharray: 77.643;
     stroke-dashoffset: -77.643;
     animation: landing_anim 4s ease forwards 4.5s;
 
 }
 
-#name path:nth-child(1){
-
+#name path:nth-child(1) /* T */
+{
     stroke-dasharray: 30.441;
     stroke-dashoffset: 30.441;
     animation: landing_name_anim 1s ease forwards;
 
 }
 
-#name path:nth-child(2){
-
+#name path:nth-child(2) /* o */
+{
     stroke-dasharray: 23.398;
     stroke-dashoffset: 23.398;
     animation: landing_name_anim 1.5s ease forwards 0.4s;
     
 }
 
-#name path:nth-child(3){
-    
+#name path:nth-child(3) /* m */
+{    
     stroke-dasharray: 42.002;
     stroke-dashoffset: 42.002;
     animation: landing_name_anim 1.5s ease forwards 0.8s;
-    
 }
 
-#name path:nth-child(4){
-
+#name path:nth-child(4) /* e */
+{
     stroke-dasharray: 22.937;
     stroke-dashoffset: 22.937;
     animation: landing_name_anim 1.5s ease forwards 1.2s;
-    
 }
 
-#name path:nth-child(5){
-
+#name path:nth-child(5) /* r */
+{
     stroke-dasharray: 17.722;
     stroke-dashoffset: 17.722;
     animation: landing_name_anim 1.5s ease forwards 1.6s;
-    
 }
 
-#name path:nth-child(6){
-
+#name path:nth-child(6) /* Z */
+{
     stroke-dasharray: 36.558;
     stroke-dashoffset: 36.558;
-    animation: landing_name_anim 1.5s ease forwards 2s;
-    
+    animation: landing_name_anim 1.5s ease forwards 2s;   
 }
 
-#name path:nth-child(7){
-
+#name path:nth-child(7) /* i */
+{
     stroke-dasharray: 16.218;
     stroke-dashoffset: 16.218;
     animation: landing_name_anim 1.5s ease forwards 2.4s;
-    
 }
 
-#name path:nth-child(8){
-    
+#name path:nth-child(8) /* v */
+{    
     stroke-dasharray: 21.220;
     stroke-dashoffset: 21.220;
-    animation: landing_name_anim 1.5s ease forwards 2.8s;
-    
+    animation: landing_name_anim 1.5s ease forwards 2.8s;   
 }
 
+/* landing animations */
 @keyframes landing_anim {
     to {
         stroke-dashoffset: 0;
