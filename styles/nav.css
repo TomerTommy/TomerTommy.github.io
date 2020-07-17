@@ -251,7 +251,7 @@ li a /* navigation bar list links */
 {
     .nav_block ul, .nav_block ul li, .nav_block #cv_btn {display: none;}
     .curtain_nav_button {display: inline-block;}
-    #logo{font-size: 25px;}
+    #logo{font-size: 47px;}
     .overlay {overflow-y: auto; font-size: 50px;}
     .overlay a {font-size: 50px;}
 }
@@ -259,7 +259,7 @@ li a /* navigation bar list links */
 
 @media screen and (min-width: 1920px)
 {
-    .nav_block ul, .nav_block ul li, .nav_block #cv_btn { font-size: 1.8vh}
+    .nav_block ul, .nav_block ul li, .nav_block #cv_btn {font-size: 1.8vh}
     
 }
 
