@@ -116,8 +116,8 @@
 @media screen and (max-width: 900px)
 {
     .title_content_wrapper {padding: 180px 0 50px 10px;}
-    .first_line {font-size: 40px;}
-    .second_line {font-size: 160px;}
-    .third_line {font-size: 100px;}
+    .first_line {font-size: 30px;}
+    .second_line {font-size: 120px;}
+    .third_line {font-size: 70px;}
     .title_content_wrapper a {display: none;}
 }
