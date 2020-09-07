@@ -105,8 +105,8 @@ li a /* navigation bar list links */
     float: left;
     margin: 2px 0 2px 0;
     padding: 0;
-    max-width: 3em;
-    min-width: 1em;
+    max-height: 3em;
+    min-height: 1em;
     cursor: pointer;
        
     /* DEBUG VARIABLES */
@@ -220,7 +220,7 @@ li a /* navigation bar list links */
     /* style */
     
     color: whitesmoke;    
-    font-size: 60px;
+    font-size: 110px;
     cursor: pointer;
 }
 
@@ -232,10 +232,17 @@ li a /* navigation bar list links */
 }
 
 /* media queries for different viewport sizes */
+
+@media screen and (min-width: 1920px)
+{
+    .nav_block ul, .nav_block ul li, .nav_block #cv_btn {font-size: 1.8vh}
+    
+}
+
 @media screen and (max-width: 1240px)
 {
     .nav_block{width: 100%;}
-    #logo{margin-left: 20px; font-size: 50px;}
+    #logo{margin-left: 20px; font-size: 5vw;}
 
     .overlay {overflow-y: auto; font-size: 80px;}
     .overlay a {font-size: 80px;}
@@ -244,22 +251,18 @@ li a /* navigation bar list links */
     top: 25px;
     right: 35px;
     }
-    .curtain_nav_button {font-size: 120px;}
-}
+    .curtain_nav_button {font-size: 110px;} 
 
-@media screen and (max-width: 1300px)
-{
     .nav_block ul, .nav_block ul li, .nav_block #cv_btn {display: none;}
     .curtain_nav_button {display: inline-block;}
-    #logo{font-size: 47px;}
     .overlay {overflow-y: auto; font-size: 50px;}
     .overlay a {font-size: 50px;}
 }
 
-
-@media screen and (min-width: 1920px)
+@media screen and (max-width: 900px)
 {
-    .nav_block ul, .nav_block ul li, .nav_block #cv_btn {font-size: 1.8vh}
-    
+    .curtain_nav_button {font-size: 12vw;} 
 }
+
+
 

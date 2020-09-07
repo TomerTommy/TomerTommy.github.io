@@ -103,3 +103,21 @@
     .third_line {font-size: 180px;}
     .title_content_wrapper a {display: none;}
 }
+
+@media screen and (max-width: 1100px)
+{
+    .title_content_wrapper {padding: 180px 0 50px 10px;}
+    .first_line {font-size: 60px;}
+    .second_line {font-size: 200px;}
+    .third_line {font-size: 140px;}
+    .title_content_wrapper a {display: none;}
+}
+
+@media screen and (max-width: 900px)
+{
+    .title_content_wrapper {padding: 180px 0 50px 10px;}
+    .first_line {font-size: 40px;}
+    .second_line {font-size: 160px;}
+    .third_line {font-size: 100px;}
+    .title_content_wrapper a {display: none;}
+}

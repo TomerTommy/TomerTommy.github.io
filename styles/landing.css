@@ -28,12 +28,20 @@
     transform: translate(-50%, -50%);
 }
 
+/* media query for background of landing page on small viewport devices */
+@media screen and (max-width: 1240px)
+{
+    #landing_page{background-image: radial-gradient(circle at center, #b1d6f5 0%, #66a4d6 30%, #0a1f44 100%)}
+}
 
 #TT path:nth-child(1) /* logo thick outline */
 {
     stroke-dasharray: 77.633;
     stroke-dashoffset: 77.633;
     animation: landing_anim 3s ease forwards 4.5s;
+    -webkit-animation: landing_anim 3s ease forwards 4.5s;
+    -moz-animation: landing_anim 3s ease forwards 4.5s;
+    -o-animation: landing_anim 3s ease forwards 4.5s;
 
 }
 
@@ -42,6 +50,9 @@
     stroke-dasharray: 77.643;
     stroke-dashoffset: -77.643;
     animation: landing_anim 4s ease forwards 4.5s;
+    -webkit-animation: landing_anim 4s ease forwards 4.5s;
+    -moz-animation: landing_anim 4s ease forwards 4.5s;
+    -o-animation: landing_anim 4s ease forwards 4.5s;
 
 }
 
@@ -50,6 +61,9 @@
     stroke-dasharray: 30.441;
     stroke-dashoffset: 30.441;
     animation: landing_name_anim 1s ease forwards;
+    -webkit-animation: landing_name_anim 1s ease forwards;
+    -moz-animation: landing_name_anim 1s ease forwards;
+    -o-animation: landing_name_anim 1s ease forwards;
 
 }
 
@@ -58,6 +72,9 @@
     stroke-dasharray: 23.398;
     stroke-dashoffset: 23.398;
     animation: landing_name_anim 1.5s ease forwards 0.4s;
+    -webkit-animation: landing_name_anim 1.5s ease forwards 0.4s;
+    -moz-animation: landing_name_anim 1.5s ease forwards 0.4s;
+    -o-animation: landing_name_anim 1.5s ease forwards 0.4s;
     
 }
 
@@ -66,6 +83,10 @@
     stroke-dasharray: 42.002;
     stroke-dashoffset: 42.002;
     animation: landing_name_anim 1.5s ease forwards 0.8s;
+    -webkit-animation: landing_name_anim 1.5s ease forwards 0.8s;
+    -moz-animation: landing_name_anim 1.5s ease forwards 0.8s;
+    -o-animation: landing_name_anim 1.5s ease forwards 0.8s;
+
 }
 
 #name path:nth-child(4) /* e */
@@ -73,6 +94,10 @@
     stroke-dasharray: 22.937;
     stroke-dashoffset: 22.937;
     animation: landing_name_anim 1.5s ease forwards 1.2s;
+    -webkit-animation: landing_name_anim 1.5s ease forwards 1.2s;
+    -moz-animation: landing_name_anim 1.5s ease forwards 1.2s;
+    -o-animation: landing_name_anim 1.5s ease forwards 1.2s;
+
 }
 
 #name path:nth-child(5) /* r */
@@ -80,13 +105,21 @@
     stroke-dasharray: 17.722;
     stroke-dashoffset: 17.722;
     animation: landing_name_anim 1.5s ease forwards 1.6s;
+    -webkit-animation: landing_name_anim 1.5s ease forwards 1.6s;
+    -moz-animation: landing_name_anim 1.5s ease forwards 1.6s;
+    -o-animation: landing_name_anim 1.5s ease forwards 1.6s;
+
 }
 
 #name path:nth-child(6) /* Z */
 {
     stroke-dasharray: 36.558;
     stroke-dashoffset: 36.558;
-    animation: landing_name_anim 1.5s ease forwards 2s;   
+    animation: landing_name_anim 1.5s ease forwards 2s;
+    -webkit-animation: landing_name_anim 1.5s ease forwards 2s;   
+    -moz-animation: landing_name_anim 1.5s ease forwards 2s;   
+    -o-animation: landing_name_anim 1.5s ease forwards 2s;   
+   
 }
 
 #name path:nth-child(7) /* i */
@@ -94,13 +127,21 @@
     stroke-dasharray: 16.218;
     stroke-dashoffset: 16.218;
     animation: landing_name_anim 1.5s ease forwards 2.4s;
+    -webkit-animation: landing_name_anim 1.5s ease forwards 2.4s;
+    -moz-animation: landing_name_anim 1.5s ease forwards 2.4s;
+    -o-animation: landing_name_anim 1.5s ease forwards 2.4s;
+
 }
 
 #name path:nth-child(8) /* v */
 {    
     stroke-dasharray: 21.220;
     stroke-dashoffset: 21.220;
-    animation: landing_name_anim 1.5s ease forwards 2.8s;   
+    animation: landing_name_anim 1.5s ease forwards 2.8s;
+    -webkit-animation: landing_name_anim 1.5s ease forwards 2.8s;   
+    -moz-animation: landing_name_anim 1.5s ease forwards 2.8s;   
+    -o-animation: landing_name_anim 1.5s ease forwards 2.8s;   
+
 }
 
 /* landing animations */
@@ -110,7 +151,8 @@
     }
 }
 
-@keyframes landing_name_anim {
+@keyframes landing_name_anim 
+{
     0% {
         fill: transparent;
     }
