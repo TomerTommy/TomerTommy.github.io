@@ -490,3 +490,7 @@ img.hover-shadow /* pictures in list on page */
     h2.work_column_title {padding: 0;}
 }
 
+@media screen and (max-width: 900px)
+{
+    .work_content_wrapper {padding: 50px 8px;}
+}
