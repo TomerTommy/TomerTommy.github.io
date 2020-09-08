@@ -412,7 +412,9 @@ hr.gradient_style /* Horizontal line gradient style */
 @media screen and (max-width: 900px)
 {
     h2 {font-size: 32px;}
+    h5 {font-size: 23px;}
     p {font-size: 18px;}
+    li {font-size: 18px;}
 }
 
 /* transition from landing to main page */
