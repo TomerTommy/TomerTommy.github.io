@@ -56,7 +56,7 @@
 
     display: block;
     position: relative;
-    padding: 5% 5% 0 10%;
+    padding: 1% 5% 0 10%;
     z-index: 3;
 
     /* DEBUG VARIABLES */
@@ -268,7 +268,7 @@ h2.work_column_title /* title for text column */
 {
     /* position */
 
-    padding: 0 8px;
+    padding: 0 8px 5px 0;
 }
   
 .row:after 
